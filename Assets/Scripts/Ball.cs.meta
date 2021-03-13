@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 9e4f054883d01e14d94c611e385f98f4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - groundCheck: {instanceID: 0}
+  - Camera: {instanceID: 0}
+  - paper: {instanceID: 0}
+  - defstate: {instanceID: 0}
+  - stone: {instanceID: 0}
+  - image: {instanceID: 0}
+  - src: {instanceID: 0}
+  - loopsrc: {instanceID: 0}
+  - normalLoop: {instanceID: 0}
+  - stoneLoop: {instanceID: 0}
+  - paperLoop: {instanceID: 0}
+  - hit: {instanceID: 0}
+  - paperHit: {instanceID: 0}
+  - checkpoint: {instanceID: 0}
+  - waterInto: {instanceID: 0}
+  - waterOut: {instanceID: 0}
+  - lose: {instanceID: 0}
+  - portal: {instanceID: 0}
+  - transformer: {instanceID: 0}
+  - blob: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
