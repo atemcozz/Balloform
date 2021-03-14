@@ -375,8 +375,8 @@ public class Ball : MonoBehaviour
     {
         if(isGround == true || (isInWater == true && save.ballState == 1))
         {
-            rb.AddForce(new Vector2(0f, jumpForce));
-
+            //rb.AddForce(new Vector2(0f, jumpForce));
+            rb.velocity = new Vector2(0f, 11f);
         }
     }
 

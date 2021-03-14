@@ -21297,6 +21297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  altJumpForce: 2
   score: 1000
   speed: 750
   moveInput: 0
