@@ -45,7 +45,7 @@ public class Ball : MonoBehaviour
     public AudioClip blob;
     //public AudioClip roll;
     //AudioSource source;
-
+   
     private string path;
     int levelIndex;
     [System.Serializable]
@@ -66,6 +66,7 @@ public class Ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         levelIndex = SceneManager.GetActiveScene().buildIndex - 1;
         ScoreText = GameObject.Find("scoreText").GetComponent<Text>();
         blob = Resources.Load<AudioClip>("Sounds/blob");
