@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8631200858423689071}
   - component: {fileID: 8631200858423689070}
   - component: {fileID: 8631200858423689065}
+  - component: {fileID: 2763237837144607673}
   m_Layer: 9
   m_Name: stone_ball_phys
   m_TagString: phObj
@@ -93,7 +94,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8631200858423689067}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 323b0e32c537fd14ba08e7860298ab59, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -121,3 +122,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2763237837144607673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631200858423689067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8e497372d278e4191f23383ad5001a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGround: 0
+  checkRadius: 0.3
