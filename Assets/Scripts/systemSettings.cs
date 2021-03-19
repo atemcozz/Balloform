@@ -11,6 +11,7 @@ public class systemSettings : MonoBehaviour
     public GameObject pauseButton;
     Text ScoreText;
     Ball  ball;
+    Text gameVersion;
 
     
     //public Ball src, loopsrc;
@@ -20,6 +21,8 @@ public class systemSettings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameVersion = GameObject.Find("(R)").GetComponent<Text>();
+        gameVersion.text = ("v"+ Application.version + "_alpha");
         ScoreText = GameObject.Find("scoreText").GetComponent<Text>();
          ball = GameObject.Find("ball_def").GetComponent<Ball>();
  

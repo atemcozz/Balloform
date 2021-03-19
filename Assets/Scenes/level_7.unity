@@ -37245,6 +37245,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: sysObj
       objectReference: {fileID: 0}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 6402800656781664973}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 6402800656781664972}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
 --- !u!61 &7004128893301914724
