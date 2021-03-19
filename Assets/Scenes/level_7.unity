@@ -4466,6 +4466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: paper_ball_phys
       objectReference: {fileID: 0}
+    - target: {fileID: 6901076216155296250, guid: e8da3e2bb57f5d94e825f5dc1c08544a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6901076216155296253, guid: e8da3e2bb57f5d94e825f5dc1c08544a, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -18495,6 +18499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ball_phys (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5418125894536966223, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -19579,6 +19587,10 @@ PrefabInstance:
     - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_Name
       value: ball_phys (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5418125894536966223, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_RootOrder
@@ -24250,6 +24262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ball_phys
       objectReference: {fileID: 0}
+    - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5418125894536966223, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -28847,6 +28863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ball_phys (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5418125894536966223, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -31246,6 +31266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_ball_phys
       objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
 --- !u!1001 &2077734441
@@ -31508,6 +31532,10 @@ PrefabInstance:
     - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_Name
       value: ball_phys (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5418125894536966223, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_RootOrder

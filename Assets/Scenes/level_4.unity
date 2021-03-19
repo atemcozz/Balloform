@@ -689,6 +689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_ball_phys
       objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
 --- !u!1001 &66667320
@@ -1708,6 +1712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_ball_phys (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
 --- !u!1001 &152081587
@@ -1826,6 +1834,10 @@ PrefabInstance:
     - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
       propertyPath: m_Name
       value: stone_ball_phys (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
@@ -2956,6 +2968,10 @@ PrefabInstance:
     - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_Name
       value: ball_phys
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5418125894536966223, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_RootOrder
@@ -5194,6 +5210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ball_phys (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5418125894536966222, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5418125894536966223, guid: 4f628cd414de3c8468ee1c9438c41a2d, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -5840,6 +5860,10 @@ PrefabInstance:
     - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
       propertyPath: m_Name
       value: stone_ball_phys (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
@@ -6674,6 +6698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_ball_phys (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
 --- !u!4 &900748095 stripped
@@ -6906,6 +6934,10 @@ PrefabInstance:
     - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
       propertyPath: m_Name
       value: stone_ball_phys (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
@@ -7281,6 +7313,10 @@ PrefabInstance:
     - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
       propertyPath: m_Name
       value: stone_ball_phys (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
@@ -10394,6 +10430,10 @@ PrefabInstance:
     - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
       propertyPath: m_Name
       value: stone_ball_phys (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
@@ -15162,6 +15202,10 @@ PrefabInstance:
     - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
       propertyPath: m_Name
       value: stone_ball_phys (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631200858423689067, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de57d4ebe90a8f4d9c110d482692465, type: 3}
