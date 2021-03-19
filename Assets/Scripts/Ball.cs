@@ -188,7 +188,7 @@ public class Ball : MonoBehaviour
         public void OnCollisionEnter2D(Collision2D other) {
 
         
-            if ((save.ballState == 1 || save.ballState == 2) && rb.velocity.magnitude > 1.5f) src.PlayOneShot(hit, rb.velocity.magnitude/10);
+            if ((save.ballState == 1 || save.ballState == 2) && rb.velocity.magnitude > 1.5f && other.gameObject.layer != 7) src.PlayOneShot(hit, rb.velocity.magnitude/10);
            else if (save.ballState == 0) src.PlayOneShot(paperHit);
         
             

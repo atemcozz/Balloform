@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class commonBalls : MonoBehaviour
 {
+    public bool isBox;
     Rigidbody2D rb;
+    AudioClip boxDrag;
     AudioClip hit;
     AudioClip normalLoop;
     AudioClip stoneLoop;
@@ -39,6 +41,7 @@ public class commonBalls : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         hit = Resources.Load<AudioClip>("Sounds/hit");
         normalLoop = Resources.Load<AudioClip>("Sounds/normalLoop");
+        boxDrag = Resources.Load<AudioClip>("Sounds/boxDrag");
         waterInto = Resources.Load<AudioClip>("Sounds/water-into");
         waterOut = Resources.Load<AudioClip>("Sounds/water-out");
         stoneLoop = Resources.Load<AudioClip>("Sounds/stoneLoop");
@@ -47,40 +50,62 @@ public class commonBalls : MonoBehaviour
         
         loopsrc.loop = true;
         loopsrc.playOnAwake = false;
-        if (rb.mass < 1f) isPaper = true;
-        else isPaper = false;
-        
 
-        switch (rb.mass)
+        if (gameObject.layer == 7) isBox = true;
+        else isBox = false;
+
+        if (isBox)
         {
-            case 0.05f:
-                loopsrc.clip = paperLoop;
-                break;
-            case 1f:
-                loopsrc.clip = normalLoop;
-                break;
-            case 5f:
-                loopsrc.clip = stoneLoop;
-                break;
+            loopsrc.clip = boxDrag;
+            
         }
-        groundCheck = Instantiate(groundCheck, transform);
+        if (!isBox)
+        {
+
+            if (rb.mass < 1f) isPaper = true;
+            else isPaper = false;
+
+            switch (rb.mass)
+            {
+                case 0.05f:
+                    loopsrc.clip = paperLoop;
+                    break;
+                case 1f:
+                    loopsrc.clip = normalLoop;
+                    break;
+                case 5f:
+                    loopsrc.clip = stoneLoop;
+                    break;
+            }
+            groundCheck = Instantiate(groundCheck, transform);
+        }
+
         whatIsGround = LayerMask.GetMask("Ground","Boxes");
     }
 
     public void OnCollisionEnter2D(Collision2D other)
     {
 
-       if((rb.velocity.magnitude > 2) && (rb.mass >= 1f)) src.PlayOneShot(hit, rb.velocity.magnitude / 5);
-       else if(isPaper) src.PlayOneShot(paperHit, rb.velocity.magnitude / 5);
+       if(((rb.velocity.magnitude > 2) && (rb.mass >= 1f) && !isBox) || (isBox && other.gameObject.tag != "Player")) src.PlayOneShot(hit, rb.velocity.magnitude / 5);
 
+       else if(isPaper) src.PlayOneShot(paperHit, rb.velocity.magnitude / 5);
         
+        
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        
+    }
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (isBox && !loopsrc.isPlaying) loopsrc.Play();
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.layer == 8)
         {
            
-            if (!isPaper) src.PlayOneShot(waterInto, rb.velocity.magnitude / 10);
+            if (!isPaper || isBox) src.PlayOneShot(waterInto, rb.velocity.magnitude / 10);
             else src.PlayOneShot(waterOut, rb.velocity.magnitude / 10);
         }
 
@@ -93,16 +118,26 @@ public class commonBalls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        checkGround();
+
+
         loopsrc.pitch = rb.velocity.x / 7;
-        groundCheck.transform.position = new Vector2(rb.transform.position.x, rb.transform.position.y - (GetComponent<CircleCollider2D>().bounds.size.y / 2));
-        if (!loopsrc.isPlaying && isGround)
+        if (!isBox)
         {
-            loopsrc.Play();
+            checkGround();
+            groundCheck.transform.position = new Vector2(rb.transform.position.x, rb.transform.position.y - (GetComponent<CircleCollider2D>().bounds.size.y / 2));
+
+            if (!loopsrc.isPlaying && isGround)
+            {
+                loopsrc.Play();
+            }
+            if (loopsrc.isPlaying && !isGround)
+            {
+                loopsrc.Stop();
+            }
         }
-        if (loopsrc.isPlaying && !isGround)
+        else
         {
-            loopsrc.Stop();
+            
         }
     }
     void checkGround()
