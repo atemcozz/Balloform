@@ -152,8 +152,8 @@ public class Ball : MonoBehaviour
         loopsrc.pitch = rb.velocity.x / 7;
        
         if (!loopsrc.isPlaying && isGround){
-            if (save.ballState == 1 || save.ballState == 2) src.PlayOneShot(hit, -rb.velocity.y/10 * rb.mass);
-            else src.PlayOneShot(paperHit);
+          // if (save.ballState == 1 || save.ballState == 2) src.PlayOneShot(hit, -rb.velocity.y / 10 * rb.mass);
+          // else src.PlayOneShot(paperHit);
             loopsrc.Play();
         }    
         if(loopsrc.isPlaying && !isGround){
@@ -184,15 +184,24 @@ public class Ball : MonoBehaviour
             isGround = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         }
 
-        private void OnCollisionEnter2D(Collision2D other) {
-            
-              
-              
-              
-              
+        public void OnCollisionEnter2D(Collision2D other) {
 
+        
+            if ((save.ballState == 1 || save.ballState == 2) && rb.velocity.magnitude > 2) src.PlayOneShot(hit, rb.velocity.magnitude/10);
+            else if (save.ballState == 0) src.PlayOneShot(paperHit);
+        
             
-        }
+        
+            
+
+
+
+        
+
+
+
+
+    }
         private void OnCollisionExit2D(Collision2D other) {
             
         }
