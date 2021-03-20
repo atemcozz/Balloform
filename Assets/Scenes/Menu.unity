@@ -2999,6 +2999,15 @@ MonoBehaviour:
   - "\u041D\u0435\u0431\u043E\u043B\u044C\u0448\u0438\u0435 \u043D\u0435\u043F\u043E\u043B\u0430\u0434\u043A\u0438"
   - "\u0413\u043E\u0441\u043F\u043E\u0434\u0441\u0442\u0432\u043E \u0432\u0435\u0440\u0435\u0432\u043E\u043A"
   - "\u0422\u043E\u0447\u043D\u043E\u0441\u0442\u044C"
+  englevelDescText:
+  - Check out the basic mechanics of the game
+  - The beginning of the path
+  - Buttons
+  - More challenges!
+  - Time is running out
+  - Minor difficulties
+  - Domination of the ropes
+  - Accuracy
   preview: {fileID: 1137196553}
   underText: {fileID: 1822952737}
   labelT: {fileID: 411024154}
@@ -3012,6 +3021,9 @@ MonoBehaviour:
   currentScore: {fileID: 0}
   bestScore: {fileID: 0}
   currentResult: {fileID: 0}
+  bestResultLabel: {fileID: 240649780}
+  levelSelPlayButtonLabel: {fileID: 1921858331}
+  description: {fileID: 914091024}
   activePlay: {r: 0, g: 0, b: 0, a: 0}
   unactivePlay: {r: 0, g: 0, b: 0, a: 0}
   playButton: {fileID: 0}

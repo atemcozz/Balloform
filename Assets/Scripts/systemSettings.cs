@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
-
+using System.IO;
 public class systemSettings : MonoBehaviour
 {
     public GameObject pauseMenu;
@@ -13,14 +13,25 @@ public class systemSettings : MonoBehaviour
     Ball  ball;
     Text gameVersion;
 
-    
+
     //public Ball src, loopsrc;
 
+    public class SaveRecords
+    {
 
+        public List<float> records = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public List<float> current = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public bool eng = true;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        SaveRecords sr = new SaveRecords();
+        if (File.Exists(Application.persistentDataPath + "/saveload.json"))
+        {
+            sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
+        }
         gameVersion = GameObject.Find("(R)").GetComponent<Text>();
         gameVersion.text = ("v"+ Application.version + "_alpha");
         ScoreText = GameObject.Find("scoreText").GetComponent<Text>();

@@ -23,7 +23,7 @@ public class levelSelect : MonoBehaviour
     public GameObject LevelSelect;
     public InputField field;
 
-    public Text playText, aboutText, exitText, currentScore, bestScore, currentResult,bestResultLabel;
+    public Text playText, aboutText, exitText, currentScore, bestScore, currentResult,bestResultLabel, levelSelPlayButtonLabel, description;
     string level;
     
 
@@ -37,7 +37,7 @@ public class levelSelect : MonoBehaviour
 
         public List<float> records = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
         public List<float> current = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-        public bool eng = false;
+        public bool eng = true;
     }
 
 
@@ -68,6 +68,8 @@ public class levelSelect : MonoBehaviour
             exitText.text = "Exit";
             level = "Level ";
             bestResultLabel.text = "Best result:";
+            levelSelPlayButtonLabel.text = "Play";
+            description.text = "Balloform is a minimalist puzzle game that inherits and brings together the elements of cult games like Ballance and Bounce, while maintaining its unique style";
             
         }
         else
@@ -77,11 +79,15 @@ public class levelSelect : MonoBehaviour
             exitText.text = "Выйти";
             level = "Уровень ";
             bestResultLabel.text = "Лучший результат:";
+            levelSelPlayButtonLabel.text = "Играть";
+            description.text = "Balloform  -  игра-головоломка в минималистичном стиле, которая унаследовала и собрала воедино элементы таких культовых игр, как Ballance и Bounce, но в тоже время смогла сохранить свой уникальный стиль";
         }
         
         ps.selLevel = ps.levelProgress;
         preview.GetComponent<Image>().sprite = prsprites[ps.selLevel + 1];
-        underText.GetComponent<Text>().text = levelDescText[ps.selLevel];
+
+       if(sr.eng == false) underText.GetComponent<Text>().text = levelDescText[ps.selLevel];
+       else underText.GetComponent<Text>().text = englevelDescText[ps.selLevel];
         labelT.GetComponent<Text>().text = (level + ps.selLevel);
         if (PlayerPrefs.HasKey("menu"))
         {
@@ -185,10 +191,11 @@ currentScore.text = sr.current[ps.selLevel].ToString();
         else
         {
             preview.GetComponent<Image>().sprite = prsprites[ps.selLevel + 1];
-          
-            underText.GetComponent<Text>().text = levelDescText[ps.selLevel];
 
-            if(sr.current[ps.selLevel] == sr.records[ps.selLevel] && sr.current[ps.selLevel] != 0) {
+            if (sr.eng == false) underText.GetComponent<Text>().text = levelDescText[ps.selLevel];
+            else underText.GetComponent<Text>().text = englevelDescText[ps.selLevel];
+
+            if (sr.current[ps.selLevel] == sr.records[ps.selLevel] && sr.current[ps.selLevel] != 0) {
                 if (sr.eng == false) currentResult.text = "Новый рекорд!";
                 else currentResult.text = "New record!";
 
