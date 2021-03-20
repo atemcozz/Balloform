@@ -59,6 +59,7 @@ public class Ball : MonoBehaviour
 
         public List<float> records = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
         public List<float> current = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        public bool eng = false;
 
     }
 

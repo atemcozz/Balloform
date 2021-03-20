@@ -11,6 +11,7 @@ public class levelSelect : MonoBehaviour
 
     public PermanentSave ps = new PermanentSave();
     public  string[] levelDescText = { "������������ � �������� ���������� ����", "������ ����", "������"};
+    public string[] englevelDescText;
     [SerializeField]
     GameObject preview;
     [SerializeField]
@@ -21,9 +22,11 @@ public class levelSelect : MonoBehaviour
     public GameObject About;
     public GameObject LevelSelect;
     public InputField field;
-    public Text currentScore;
-    public Text bestScore;
-    public Text currentResult;
+
+    public Text playText, aboutText, exitText, currentScore, bestScore, currentResult,bestResultLabel;
+    string level;
+    
+
     public Color activePlay;
     public Color unactivePlay;
     public GameObject playButton;
@@ -34,6 +37,7 @@ public class levelSelect : MonoBehaviour
 
         public List<float> records = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
         public List<float> current = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        public bool eng = false;
     }
 
 
@@ -53,15 +57,32 @@ public class levelSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        if(File.Exists(Application.persistentDataPath + "/saveload.json"))
+        if (File.Exists(Application.persistentDataPath + "/saveload.json"))
         {
             sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
         }
+        if (sr.eng == true)
+        {
+            playText.text = "Play";
+            aboutText.text = "About";
+            exitText.text = "Exit";
+            level = "Level ";
+            bestResultLabel.text = "Best result:";
+            
+        }
+        else
+        {
+            playText.text = "Играть";
+            aboutText.text = "Об игре";
+            exitText.text = "Выйти";
+            level = "Уровень ";
+            bestResultLabel.text = "Лучший результат:";
+        }
+        
         ps.selLevel = ps.levelProgress;
         preview.GetComponent<Image>().sprite = prsprites[ps.selLevel + 1];
         underText.GetComponent<Text>().text = levelDescText[ps.selLevel];
-        labelT.GetComponent<Text>().text = ("Уровень " + ps.selLevel);
+        labelT.GetComponent<Text>().text = (level + ps.selLevel);
         if (PlayerPrefs.HasKey("menu"))
         {
             OnPlayButtonClick();
@@ -109,12 +130,15 @@ currentScore.text = sr.current[ps.selLevel].ToString();
         bestScore.text = sr.records[ps.selLevel].ToString();
          playButton.GetComponent<Image>().color = new Color(0f,200f/255f,60f/255f);
         if(sr.current[ps.selLevel] == sr.records[ps.selLevel] && sr.current[ps.selLevel] != 0) {
-            currentResult.text = "Новый рекорд!";
+
+          if(sr.eng == false)  currentResult.text = "Новый рекорд!";
+          else currentResult.text = "New Record!";
 
             currentResult.color = new Color(0f,200f/255f,60f/255f);
         }
         else {
-            currentResult.text = "Текущий результат:";
+            if (sr.eng == false) currentResult.text = "Последний результат:";
+            else currentResult.text = "Last result:";
             currentResult.color = new Color(50f/255f,50f/255f,50f/255f);
         }
         
@@ -145,13 +169,16 @@ currentScore.text = sr.current[ps.selLevel].ToString();
         {
 
             preview.GetComponent<Image>().sprite = prsprites[0];
-            underText.GetComponent<Text>().text = "Уровень в разработке";
+
+            if(sr.eng == false) underText.GetComponent<Text>().text = "Уровень в разработке..";
+            else underText.GetComponent<Text>().text = "Level is in development..";
             currentScore.text = "-";
             bestScore.text = "-";
             //playButton.SetActive(false);
             playButton.GetComponent<Image>().color = new Color(128f/255f,128f/255f,128f/255f);
             
-            currentResult.text = "Текущий результат:";
+           if (sr.eng == false) currentResult.text = "Последний результат:";
+            else currentResult.text = "Last result:";
             currentResult.color = new Color(50f/255f,50f/255f,50f/255f);
             playButtonBlank.SetActive(false);
         }
@@ -162,12 +189,14 @@ currentScore.text = sr.current[ps.selLevel].ToString();
             underText.GetComponent<Text>().text = levelDescText[ps.selLevel];
 
             if(sr.current[ps.selLevel] == sr.records[ps.selLevel] && sr.current[ps.selLevel] != 0) {
-                currentResult.text = "Новый рекорд!";
+                if (sr.eng == false) currentResult.text = "Новый рекорд!";
+                else currentResult.text = "New record!";
 
                 currentResult.color = new Color(0f,200f/255f,60f/255f);
             }
             else {
-                currentResult.text = "Текущий результат:";
+                if (sr.eng == false) currentResult.text = "Последний результат:";
+                else currentResult.text = "Last result:";
                 currentResult.color = new Color(50f/255f,50f/255f,50f/255f);
             }
             currentScore.text = sr.current[ps.selLevel].ToString();
@@ -178,16 +207,35 @@ currentScore.text = sr.current[ps.selLevel].ToString();
         }
         if(ps.selLevel != 0) 
         { 
-          labelT.GetComponent<Text>().text = ("Уровень " + ps.selLevel);
+          labelT.GetComponent<Text>().text = (level + ps.selLevel);
         }
         else
         {
-            labelT.GetComponent<Text>().text = ("Обучение");
+           if(sr.eng == false) labelT.GetComponent<Text>().text = ("Обучение");
+           else labelT.GetComponent<Text>().text = ("Tutorial");
+
         }
 
 
     }
 
+    public void OnRusLangButtonDown()
+    {
+        sr.eng = false;
+        SaveRecord();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void OnEngLangButtonDown()
+    {
+        sr.eng = true;
+        SaveRecord();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void SaveRecord()
+    {
+        File.WriteAllText(Application.persistentDataPath + "/saveload.json", JsonUtility.ToJson(sr));
+    }
 
     public void OnBonusButtonDown(){
        if(field.text == "debug"){
