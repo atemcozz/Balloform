@@ -23,7 +23,7 @@ public class levelSelect : MonoBehaviour
     public GameObject LevelSelect;
     public InputField field;
 
-    public Text playText, aboutText, exitText, currentScore, bestScore, currentResult,bestResultLabel, levelSelPlayButtonLabel, description;
+    public Text playText, aboutText, exitText, currentScore, bestScore, currentResult,bestResultLabel, levelSelPlayButtonLabel, description, bonusCode;
     string level;
     
 
@@ -67,6 +67,7 @@ public class levelSelect : MonoBehaviour
             aboutText.text = "About";
             exitText.text = "Exit";
             level = "Level ";
+            bonusCode.text = "Bonus code:";
             bestResultLabel.text = "Best result:";
             levelSelPlayButtonLabel.text = "Play";
             description.text = "Balloform is a minimalist puzzle game that inherits and brings together the elements of cult games like Ballance and Bounce, while maintaining its unique style";
@@ -78,6 +79,7 @@ public class levelSelect : MonoBehaviour
             aboutText.text = "Об игре";
             exitText.text = "Выйти";
             level = "Уровень ";
+            bonusCode.text = "Бонусный код:";
             bestResultLabel.text = "Лучший результат:";
             levelSelPlayButtonLabel.text = "Играть";
             description.text = "Balloform  -  игра-головоломка в минималистичном стиле, которая унаследовала и собрала воедино элементы таких культовых игр, как Ballance и Bounce, но в тоже время смогла сохранить свой уникальный стиль";
@@ -115,12 +117,14 @@ public class levelSelect : MonoBehaviour
     }
     public void OnPreviewClick()
     {
-       if(ps.selLevel <= ps.levelProgress)
+       if(ps.selLevel <= ps.levelProgress && ps.selLevel != 0)
         {
            
             PlayerPrefs.DeleteAll();
             SceneManager.LoadScene("level_" + ps.selLevel);
         }
+       else if(ps.selLevel == 0) SceneManager.LoadScene("tutorial");
+
     }
     public void OnPlayButtonClick()
     {

@@ -1870,3 +1870,2371 @@ System memory in use after: 62.1 MB.
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1708.
 Total: 4.950183 ms (FindLiveObjects: 0.219643 ms CreateObjectMapping: 0.063635 ms MarkObjects: 4.641758 ms  DeleteObjects: 0.023093 ms)
 
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.001346 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.738 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.1 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1711.
+Total: 3.577413 ms (FindLiveObjects: 0.281225 ms CreateObjectMapping: 0.146258 ms MarkObjects: 3.118625 ms  DeleteObjects: 0.028225 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13892.549993 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30c246f7af3f99111cfe9c56660791c') in 0.846849 seconds
+  Import took 0.850956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Prefabs/ball_def.prefab
+  artifactKey: Guid(f44492a7085f73846bd4f76f591f9ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ball_def.prefab using Guid(f44492a7085f73846bd4f76f591f9ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a81f787f00c9a87ffac45c5ed3764a4') in 0.552479 seconds
+  Import took 0.555840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(db4ab60f3634d1c47977c65cbf7981ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(db4ab60f3634d1c47977c65cbf7981ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306e2889156f6ae8db36aa8a22cf6309') in 0.029691 seconds
+  Import took 0.059236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.583920 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be883bc1a11f1b74281768327492018') in 0.040610 seconds
+  Import took 0.047552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.685960 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6edb7a51b64fe5d00f52077448faed') in 0.048871 seconds
+  Import took 0.113491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.768328 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c5f868d690d4ccbf01f8bce49099e54') in 0.028537 seconds
+  Import took 0.035807 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000795 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.648 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.2 MB.
+System memory in use after: 62.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1718.
+Total: 3.409088 ms (FindLiveObjects: 0.210919 ms CreateObjectMapping: 0.058503 ms MarkObjects: 3.111954 ms  DeleteObjects: 0.025146 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000650 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.672 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.3 MB.
+System memory in use after: 62.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1721.
+Total: 4.345137 ms (FindLiveObjects: 0.399771 ms CreateObjectMapping: 0.197576 ms MarkObjects: 3.715973 ms  DeleteObjects: 0.029252 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000633 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.698 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.4 MB.
+System memory in use after: 62.5 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1724.
+Total: 12.086020 ms (FindLiveObjects: 0.349479 ms CreateObjectMapping: 0.121112 ms MarkObjects: 11.582072 ms  DeleteObjects: 0.030791 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.341250 seconds.
+  path: Assets/Scenes/level_0.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_0.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585c8426d63ae0f653d9601097edc620') in 0.037964 seconds
+  Import took 0.042274 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000695 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.739 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.5 MB.
+System memory in use after: 62.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1727.
+Total: 4.421602 ms (FindLiveObjects: 0.382323 ms CreateObjectMapping: 0.152416 ms MarkObjects: 3.855046 ms  DeleteObjects: 0.029252 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.002022 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.731 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.6 MB.
+System memory in use after: 62.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1730.
+Total: 2.365270 ms (FindLiveObjects: 0.195523 ms CreateObjectMapping: 0.061069 ms MarkObjects: 2.085071 ms  DeleteObjects: 0.021554 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000712 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.698 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.6 MB.
+System memory in use after: 62.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1733.
+Total: 6.038648 ms (FindLiveObjects: 0.327412 ms CreateObjectMapping: 0.099045 ms MarkObjects: 5.577295 ms  DeleteObjects: 0.031817 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000689 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.562 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.7 MB.
+System memory in use after: 61.8 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1736.
+Total: 2.401193 ms (FindLiveObjects: 0.243250 ms CreateObjectMapping: 0.090834 ms MarkObjects: 2.045042 ms  DeleteObjects: 0.020014 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.003377 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.501 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.8 MB.
+System memory in use after: 61.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1739.
+Total: 3.843243 ms (FindLiveObjects: 0.301240 ms CreateObjectMapping: 0.094426 ms MarkObjects: 3.419352 ms  DeleteObjects: 0.025146 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000976 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.431 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.9 MB.
+System memory in use after: 62.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1742.
+Total: 4.509870 ms (FindLiveObjects: 0.304319 ms CreateObjectMapping: 0.095452 ms MarkObjects: 4.071097 ms  DeleteObjects: 0.034897 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000960 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.483 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.0 MB.
+System memory in use after: 62.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1745.
+Total: 2.685497 ms (FindLiveObjects: 0.317662 ms CreateObjectMapping: 0.088268 ms MarkObjects: 2.255961 ms  DeleteObjects: 0.021041 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 405.800613 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593ae5556d57315232b6a2e18ccc49a2') in 0.097730 seconds
+  Import took 0.103202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.125738 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ff723f48e5a7a089f4b35d13307564') in 0.060986 seconds
+  Import took 1.136779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.341544 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e18198de60f237a553f7485c1ea98d') in 0.033822 seconds
+  Import took 0.038045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.008186 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3469eb405836547699a1d858c68a5473') in 0.033909 seconds
+  Import took 0.038005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.495100 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(1413fa72ab207774695e3b1bf82122e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99253b59a38e1b40e77ad25d63164636') in 0.027410 seconds
+  Import took 0.032669 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000663 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.029 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.1 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1748.
+Total: 4.643811 ms (FindLiveObjects: 0.941181 ms CreateObjectMapping: 0.474696 ms MarkObjects: 3.191498 ms  DeleteObjects: 0.032844 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.051877 seconds.
+  path: Assets/Scenes/level_7.unity
+  artifactKey: Guid(6e8278dd00ee3395f9671461f88fb6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_7.unity using Guid(6e8278dd00ee3395f9671461f88fb6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5893c229b60f361aa5c875389c31e8') in 0.034162 seconds
+  Import took 0.038131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/Scenes/level_7.unity
+  artifactKey: Guid(6e8278dd00ee3395f9671461f88fb6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_7.unity using Guid(6e8278dd00ee3395f9671461f88fb6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5893c229b60f361aa5c875389c31e8') in 0.014013 seconds
+  Import took 0.018093 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000635 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.666 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.2 MB.
+System memory in use after: 62.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1751.
+Total: 3.616415 ms (FindLiveObjects: 0.281225 ms CreateObjectMapping: 0.097505 ms MarkObjects: 3.153522 ms  DeleteObjects: 0.078004 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.001302 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.597 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.2 MB.
+System memory in use after: 62.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1754.
+Total: 3.726750 ms (FindLiveObjects: 0.315096 ms CreateObjectMapping: 0.099558 ms MarkObjects: 3.278739 ms  DeleteObjects: 0.030791 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000929 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.577 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.3 MB.
+System memory in use after: 62.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1757.
+Total: 3.635916 ms (FindLiveObjects: 0.619927 ms CreateObjectMapping: 0.399771 ms MarkObjects: 2.590045 ms  DeleteObjects: 0.021041 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 191.848818 seconds.
+  path: Assets/Scenes/level_6.unity
+  artifactKey: Guid(729d4aa4a19c3ba49ad7fbe0db6f06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_6.unity using Guid(729d4aa4a19c3ba49ad7fbe0db6f06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809b5ba32bf44c01a675914040f1ab93') in 0.040584 seconds
+  Import took 0.046984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.639345 seconds.
+  path: Assets/Scenes/level_5.unity
+  artifactKey: Guid(84e9ededc8c890d44b3b992511761d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_5.unity using Guid(84e9ededc8c890d44b3b992511761d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419abe3822b727c1c66eedff72f24d18') in 0.014668 seconds
+  Import took 0.018916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.150944 seconds.
+  path: Assets/Scenes/level_3.unity
+  artifactKey: Guid(c595f3ff1d8d2d14c8bb56d26ac29ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_3.unity using Guid(c595f3ff1d8d2d14c8bb56d26ac29ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559fdf05f7e9a76fd615755003e0f6ae') in 0.021988 seconds
+  Import took 0.026025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.238268 seconds.
+  path: Assets/Scenes/level_2.unity
+  artifactKey: Guid(2a9c08cbd56b61a498efcdfab677d494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_2.unity using Guid(2a9c08cbd56b61a498efcdfab677d494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a1d06628f46287948f6a1771b0df402') in 0.017117 seconds
+  Import took 0.021049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.116336 seconds.
+  path: Assets/Scenes/level_debug.unity
+  artifactKey: Guid(c593e494ce6fc6d4689a545f6226ca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_debug.unity using Guid(c593e494ce6fc6d4689a545f6226ca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '689034c7ebcb8567df97e785a99a749f') in 0.024888 seconds
+  Import took 0.029733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.821362 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(d66a82970eaffed4ea2ea5b1ad343bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(d66a82970eaffed4ea2ea5b1ad343bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '341a51dc178d3d893e1bbf3f60160d67') in 0.011866 seconds
+  Import took 0.018826 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000632 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.518 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.4 MB.
+System memory in use after: 62.5 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1760.
+Total: 5.945761 ms (FindLiveObjects: 0.329465 ms CreateObjectMapping: 0.103150 ms MarkObjects: 5.369968 ms  DeleteObjects: 0.137534 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000656 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.537 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.03 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.5 MB.
+System memory in use after: 62.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1763.
+Total: 2.301635 ms (FindLiveObjects: 0.193984 ms CreateObjectMapping: 0.058503 ms MarkObjects: 2.027594 ms  DeleteObjects: 0.019501 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.001057 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.484 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.6 MB.
+System memory in use after: 62.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1766.
+Total: 2.616217 ms (FindLiveObjects: 0.196037 ms CreateObjectMapping: 0.055937 ms MarkObjects: 2.341150 ms  DeleteObjects: 0.021554 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000646 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.590 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.7 MB.
+System memory in use after: 62.8 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1769.
+Total: 2.416075 ms (FindLiveObjects: 0.257619 ms CreateObjectMapping: 0.094939 ms MarkObjects: 2.039910 ms  DeleteObjects: 0.021554 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000944 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.461 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.7 MB.
+System memory in use after: 62.8 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1772.
+Total: 3.436287 ms (FindLiveObjects: 0.302779 ms CreateObjectMapping: 0.093400 ms MarkObjects: 3.014962 ms  DeleteObjects: 0.023093 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 420.391217 seconds.
+  path: Assets/Sprites/langBlank.png
+  artifactKey: Guid(1dee3a1d6baffa249aa1fdd6fe72d5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/langBlank.png using Guid(1dee3a1d6baffa249aa1fdd6fe72d5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a19a6243c2d5c48b36ad81f8824596a') in 0.132336 seconds
+  Import took 0.136794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002724 seconds.
+  path: Assets/Sprites/langBlank.png
+  artifactKey: Guid(1dee3a1d6baffa249aa1fdd6fe72d5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/langBlank.png using Guid(1dee3a1d6baffa249aa1fdd6fe72d5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a19a6243c2d5c48b36ad81f8824596a') in 0.033981 seconds
+  Import took 0.040651 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000684 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.544 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.9 MB.
+System memory in use after: 62.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1778.
+Total: 2.395548 ms (FindLiveObjects: 0.202708 ms CreateObjectMapping: 0.064661 ms MarkObjects: 2.105598 ms  DeleteObjects: 0.020527 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 405.785695 seconds.
+  path: Assets/Sprites/roundEngFlag.png
+  artifactKey: Guid(f9142495cd5ab4a4da85ee8dd4b7eeea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/roundEngFlag.png using Guid(f9142495cd5ab4a4da85ee8dd4b7eeea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffc5e479210729bcc0c40730fa287fb') in 0.133682 seconds
+  Import took 0.138643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Sprites/roundRusFlag.png
+  artifactKey: Guid(9bc3094a6d7308c439d247a16ed82e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/roundRusFlag.png using Guid(9bc3094a6d7308c439d247a16ed82e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c29d7c63e8408f7885bd245e0cae7cc6') in 0.040238 seconds
+  Import took 0.048569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Sprites/roundEngFlag.png
+  artifactKey: Guid(f9142495cd5ab4a4da85ee8dd4b7eeea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/roundEngFlag.png using Guid(f9142495cd5ab4a4da85ee8dd4b7eeea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffc5e479210729bcc0c40730fa287fb') in 0.032204 seconds
+  Import took 0.035530 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000629 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.359 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1133 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.9 MB.
+System memory in use after: 62.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1782.
+Total: 2.686010 ms (FindLiveObjects: 0.227854 ms CreateObjectMapping: 0.057990 ms MarkObjects: 2.378613 ms  DeleteObjects: 0.019501 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 163.926874 seconds.
+  path: Assets/Scenes/level_0.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_0.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd324d45a85b335c814433af9796c36e0') in 0.028468 seconds
+  Import took 0.032424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005712 seconds.
+  path: Assets/Scenes/level_0.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level_0.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd324d45a85b335c814433af9796c36e0') in 0.011010 seconds
+  Import took 0.015613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4405.396647 seconds.
+  path: Assets/Scenes/tutorial.unity
+  artifactKey: Guid(06b6c398a83b8f74e8a606e83a8b813c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/tutorial.unity using Guid(06b6c398a83b8f74e8a606e83a8b813c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ca417d2952df751d2ad7ce0428252b') in 0.018256 seconds
+  Import took 0.022275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.559955 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(d66a82970eaffed4ea2ea5b1ad343bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(d66a82970eaffed4ea2ea5b1ad343bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938194266dc02d7b93957290f90a91fd') in 0.011787 seconds
+  Import took 0.015455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 199.500615 seconds.
+  path: Assets/Resources/tutorial
+  artifactKey: Guid(abe775e0195917046b9390f86fcd28d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial using Guid(abe775e0195917046b9390f86fcd28d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0086a6d1bcca5609cde4dbabda8ae777') in 0.013216 seconds
+  Import took 0.017411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.261945 seconds.
+  path: Assets/Resources/tutorial/rus
+  artifactKey: Guid(e841cffd7ef612c42aaa2e28957cc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus using Guid(e841cffd7ef612c42aaa2e28957cc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2cad3c3db8df66f6fd93470c51c524b') in 0.181838 seconds
+  Import took 0.301896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Resources/tutorial/rus/phObj_rus.png
+  artifactKey: Guid(70b571e5969e3364e849d999a4eb3961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/phObj_rus.png using Guid(70b571e5969e3364e849d999a4eb3961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6d935cfed71bcf552e8860f65f246e') in 0.154392 seconds
+  Import took 0.190263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Resources/tutorial/rus/transformer-rus.png
+  artifactKey: Guid(1b2544b0b9804b242aeb0184fbf74c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/transformer-rus.png using Guid(1b2544b0b9804b242aeb0184fbf74c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e6e754bd5bb54da710141fb2a7f765') in 0.057057 seconds
+  Import took 0.060266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Resources/tutorial/rus/booster_rus.png
+  artifactKey: Guid(cab331d2b61d2054586d843f67bda963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/booster_rus.png using Guid(cab331d2b61d2054586d843f67bda963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3762bf1434eaef4ab83b8f5ddb6bd919') in 0.084106 seconds
+  Import took 0.087240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Resources/tutorial/rus/score-rus.png
+  artifactKey: Guid(ec33d4528ecbd4b48b0687a17e541722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/score-rus.png using Guid(ec33d4528ecbd4b48b0687a17e541722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf63ce5222facb031d6d1f96ea56be3') in 0.032917 seconds
+  Import took 0.040743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Resources/tutorial/rus/first_rus.png
+  artifactKey: Guid(2da2419138d9f414b902a9dd71d214d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/first_rus.png using Guid(2da2419138d9f414b902a9dd71d214d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe397803ba412c0b4be8bed3248cbe7') in 0.038834 seconds
+  Import took 0.042734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Resources/tutorial/rus/checkpoint_rus.png
+  artifactKey: Guid(704e4ea1fecebec48972d766fabb144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/checkpoint_rus.png using Guid(704e4ea1fecebec48972d766fabb144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da67e218d68afadcec751cae476b8b37') in 0.040373 seconds
+  Import took 0.044682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Resources/tutorial/rus/portal-rus.png
+  artifactKey: Guid(096d1f9ae6a34694ca342e67dc82e343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/portal-rus.png using Guid(096d1f9ae6a34694ca342e67dc82e343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b8a06678a216a5b71f53761e6064f8') in 0.181174 seconds
+  Import took 0.202248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Resources/tutorial/rus/traps_rus.png
+  artifactKey: Guid(e0528434a02700245acb7599c43b3743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/traps_rus.png using Guid(e0528434a02700245acb7599c43b3743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf66a3f2b68db4c1cbec74fc4e1574bd') in 0.043398 seconds
+  Import took 0.047339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006037 seconds.
+  path: Assets/Resources/tutorial/rus/traps_rus.png
+  artifactKey: Guid(e0528434a02700245acb7599c43b3743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/traps_rus.png using Guid(e0528434a02700245acb7599c43b3743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf66a3f2b68db4c1cbec74fc4e1574bd') in 0.031793 seconds
+  Import took 0.037230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 203.626279 seconds.
+  path: Assets/Prefabs/sysObj.prefab
+  artifactKey: Guid(cfa0c1485b4a00240b7cf481c34181a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/sysObj.prefab using Guid(cfa0c1485b4a00240b7cf481c34181a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6aa5901e7e56c95a20626438758356a') in 0.030000 seconds
+  Import took 0.034413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002378 seconds.
+  path: Assets/Prefabs/sysObj.prefab
+  artifactKey: Guid(cfa0c1485b4a00240b7cf481c34181a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/sysObj.prefab using Guid(cfa0c1485b4a00240b7cf481c34181a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6aa5901e7e56c95a20626438758356a') in 0.015478 seconds
+  Import took 0.022132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.147232 seconds.
+  path: Assets/Scripts/tutorialScreen.cs
+  artifactKey: Guid(ae610eb4b2ac10e43a4208b39233cd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/tutorialScreen.cs using Guid(ae610eb4b2ac10e43a4208b39233cd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff5a073f5a0ff2b570b6a9cc75e2ff4') in 0.019852 seconds
+  Import took 0.024417 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000985 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.066 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.1 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1787.
+Total: 5.648114 ms (FindLiveObjects: 1.167496 ms CreateObjectMapping: 0.274041 ms MarkObjects: 4.174247 ms  DeleteObjects: 0.025659 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.001005 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.500 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.2 MB.
+System memory in use after: 62.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1790.
+Total: 4.196314 ms (FindLiveObjects: 0.346913 ms CreateObjectMapping: 0.111874 ms MarkObjects: 3.706222 ms  DeleteObjects: 0.028225 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 263.266313 seconds.
+  path: Assets/Scripts/tutorialScreen.cs
+  artifactKey: Guid(ae610eb4b2ac10e43a4208b39233cd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/tutorialScreen.cs using Guid(ae610eb4b2ac10e43a4208b39233cd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc3db7e3fce1222aa92db965ce85a54a') in 0.014846 seconds
+  Import took 0.020240 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000691 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.479 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.3 MB.
+System memory in use after: 62.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1793.
+Total: 5.163668 ms (FindLiveObjects: 1.115151 ms CreateObjectMapping: 0.489578 ms MarkObjects: 3.534818 ms  DeleteObjects: 0.020527 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000893 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.628 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.4 MB.
+System memory in use after: 62.5 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1796.
+Total: 6.196709 ms (FindLiveObjects: 0.587597 ms CreateObjectMapping: 0.326386 ms MarkObjects: 5.231408 ms  DeleteObjects: 0.048239 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.001784 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.741 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.5 MB.
+System memory in use after: 62.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1799.
+Total: 4.614046 ms (FindLiveObjects: 0.333570 ms CreateObjectMapping: 0.091860 ms MarkObjects: 4.155772 ms  DeleteObjects: 0.030278 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000660 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.513 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.6 MB.
+System memory in use after: 62.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1802.
+Total: 2.630586 ms (FindLiveObjects: 0.231960 ms CreateObjectMapping: 0.059016 ms MarkObjects: 2.316004 ms  DeleteObjects: 0.022067 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000761 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.934 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.7 MB.
+System memory in use after: 62.8 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1805.
+Total: 2.666509 ms (FindLiveObjects: 0.282765 ms CreateObjectMapping: 0.090834 ms MarkObjects: 2.269817 ms  DeleteObjects: 0.021041 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 623.712180 seconds.
+  path: Assets/Resources/tutorial/eng/booster_eng.png
+  artifactKey: Guid(2deefafddf2a0634580f1d4f66ff31e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/eng/booster_eng.png using Guid(2deefafddf2a0634580f1d4f66ff31e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a4cc9fc191c74e059f4b7e536715af') in 0.133301 seconds
+  Import took 0.164304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Resources/tutorial/eng/checkpoint_eng.png
+  artifactKey: Guid(d3a583acd30b9024d8fbed78d3555957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/eng/checkpoint_eng.png using Guid(d3a583acd30b9024d8fbed78d3555957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee770ec01e3cebb205ac2c145768afc7') in 0.062699 seconds
+  Import took 0.079964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Resources/tutorial/eng/transformer-eng.png
+  artifactKey: Guid(5a140312aa1d94645ba3422c83408fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/eng/transformer-eng.png using Guid(5a140312aa1d94645ba3422c83408fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d3b571d39f77a93e805e55c1c3dcdd') in 0.044292 seconds
+  Import took 0.048058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000700 seconds.
+  path: Assets/Resources/tutorial/eng/traps_eng.png
+  artifactKey: Guid(2b9c02c215d1dee41956acf0ca7622ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/eng/traps_eng.png using Guid(2b9c02c215d1dee41956acf0ca7622ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb13c6a0ad9cff038572ab3e372d3477') in 0.051691 seconds
+  Import took 0.055155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000494 seconds.
+  path: Assets/Resources/tutorial/eng/portal-eng.png
+  artifactKey: Guid(489c925fbadf28b4a9f83085802f2690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/eng/portal-eng.png using Guid(489c925fbadf28b4a9f83085802f2690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f32706e5f8c19041ce52b4251adb297') in 0.036179 seconds
+  Import took 0.040377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Resources/tutorial/eng/score-eng.png
+  artifactKey: Guid(76825f0c2ce6a4a4bbf76548c7000fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/eng/score-eng.png using Guid(76825f0c2ce6a4a4bbf76548c7000fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb54d2865f5e2dba5f43f2243c328e94') in 0.040306 seconds
+  Import took 0.045277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Resources/tutorial/eng/first_eng.png
+  artifactKey: Guid(e3721f42858789b4aae13f7e17e87095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/eng/first_eng.png using Guid(e3721f42858789b4aae13f7e17e87095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90aa475d1431e7d509cbf7d586ff6653') in 0.068811 seconds
+  Import took 0.072025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Resources/tutorial/eng/phObj_eng.png
+  artifactKey: Guid(163f4ff777975e642896fb29b8ccaf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/eng/phObj_eng.png using Guid(163f4ff777975e642896fb29b8ccaf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be3737f4e8b3ddfa0880243af5a6b0c') in 0.037078 seconds
+  Import took 0.040439 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000834 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.680 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.8 MB.
+System memory in use after: 62.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1809.
+Total: 4.526292 ms (FindLiveObjects: 0.698958 ms CreateObjectMapping: 0.203734 ms MarkObjects: 3.588703 ms  DeleteObjects: 0.030791 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.222148 seconds.
+  path: Assets/Resources/tutorial/rus/1.png
+  artifactKey: Guid(94418ac1f33beab469066791b366a0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/1.png using Guid(94418ac1f33beab469066791b366a0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb37f5b99d87eca499444140fccb6a9') in 0.119551 seconds
+  Import took 0.122989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Resources/tutorial/rus/5.png
+  artifactKey: Guid(0dba7973d6ef85f4dab30c43afca9196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/5.png using Guid(0dba7973d6ef85f4dab30c43afca9196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b24a3dfdb82074fa21252f6eef8a3373') in 0.037891 seconds
+  Import took 0.041190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/Resources/tutorial/rus/3.png
+  artifactKey: Guid(d6f74fbaf85c84c49b55a48dd842a190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/3.png using Guid(d6f74fbaf85c84c49b55a48dd842a190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04120fda4e74db72c9e05ce68526476f') in 0.405768 seconds
+  Import took 0.409289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Resources/tutorial/rus/7.png
+  artifactKey: Guid(22e42b9b9bd94304bbf2db7fe6c4b75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/7.png using Guid(22e42b9b9bd94304bbf2db7fe6c4b75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb30cf691354e0e46c43514c76d1fb9') in 0.036881 seconds
+  Import took 0.043624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001046 seconds.
+  path: Assets/Resources/tutorial/rus/6.png
+  artifactKey: Guid(a8d216bdf027cba43858db3a4520bd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/6.png using Guid(a8d216bdf027cba43858db3a4520bd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716f9e2065e68fb79078a875bd40308c') in 0.041544 seconds
+  Import took 0.047534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Resources/tutorial/rus/8.png
+  artifactKey: Guid(3e27bf52f0bfcc040857b80ba10eba9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/8.png using Guid(3e27bf52f0bfcc040857b80ba10eba9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec95f082c701af86bfd842d02252c30') in 0.035597 seconds
+  Import took 0.040771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Assets/Resources/tutorial/rus/4.png
+  artifactKey: Guid(c1cdbcac114cbfa4e8b069d44102790e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/4.png using Guid(c1cdbcac114cbfa4e8b069d44102790e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc9ed558b9e5ed0dda033e4c7db0c06') in 0.041897 seconds
+  Import took 0.063932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001184 seconds.
+  path: Assets/Resources/tutorial/rus/2.png
+  artifactKey: Guid(422e8911346326142b3f5b2f869070ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tutorial/rus/2.png using Guid(422e8911346326142b3f5b2f869070ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa457d6460560f0657068f58abc751f') in 0.034381 seconds
+  Import took 0.039016 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.001930 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.652 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.9 MB.
+System memory in use after: 63.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1813.
+Total: 3.068846 ms (FindLiveObjects: 0.477775 ms CreateObjectMapping: 0.136507 ms MarkObjects: 2.427878 ms  DeleteObjects: 0.022580 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000675 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.651 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.9 MB.
+System memory in use after: 63.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1816.
+Total: 2.780950 ms (FindLiveObjects: 0.215025 ms CreateObjectMapping: 0.059529 ms MarkObjects: 2.480736 ms  DeleteObjects: 0.024120 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000691 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.470 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.0 MB.
+System memory in use after: 62.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1819.
+Total: 3.192011 ms (FindLiveObjects: 0.352045 ms CreateObjectMapping: 0.112388 ms MarkObjects: 2.694221 ms  DeleteObjects: 0.030278 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000694 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.720 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.1 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1822.
+Total: 2.377586 ms (FindLiveObjects: 0.205274 ms CreateObjectMapping: 0.059016 ms MarkObjects: 2.089689 ms  DeleteObjects: 0.021554 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000716 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.772 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.2 MB.
+System memory in use after: 62.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1825.
+Total: 4.193748 ms (FindLiveObjects: 0.344860 ms CreateObjectMapping: 0.105716 ms MarkObjects: 3.706222 ms  DeleteObjects: 0.033870 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000675 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.424 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.3 MB.
+System memory in use after: 62.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1828.
+Total: 4.831637 ms (FindLiveObjects: 1.434352 ms CreateObjectMapping: 0.212972 ms MarkObjects: 3.155061 ms  DeleteObjects: 0.024120 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 362.888924 seconds.
+  path: Assets/Scenes/tutorial.unity
+  artifactKey: Guid(06b6c398a83b8f74e8a606e83a8b813c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/tutorial.unity using Guid(06b6c398a83b8f74e8a606e83a8b813c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18768a1f27b3ec163261e10432950157') in 0.036473 seconds
+  Import took 0.041888 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.441 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.4 MB.
+System memory in use after: 62.5 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1831.
+Total: 3.061662 ms (FindLiveObjects: 0.217590 ms CreateObjectMapping: 0.057990 ms MarkObjects: 2.761962 ms  DeleteObjects: 0.022580 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000700 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.124 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.4 MB.
+System memory in use after: 62.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1834.
+Total: 2.701406 ms (FindLiveObjects: 0.230420 ms CreateObjectMapping: 0.056964 ms MarkObjects: 2.389389 ms  DeleteObjects: 0.023607 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000646 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.447 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.5 MB.
+System memory in use after: 62.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1837.
+Total: 3.437826 ms (FindLiveObjects: 0.214511 ms CreateObjectMapping: 0.057990 ms MarkObjects: 3.135560 ms  DeleteObjects: 0.027712 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000825 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.587 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.6 MB.
+System memory in use after: 62.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1840.
+Total: 2.831755 ms (FindLiveObjects: 0.375138 ms CreateObjectMapping: 0.120085 ms MarkObjects: 2.311385 ms  DeleteObjects: 0.023093 ms)
+

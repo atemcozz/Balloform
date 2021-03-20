@@ -2175,13 +2175,29 @@ PrefabInstance:
       value: sysObj
       objectReference: {fileID: 0}
     - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: exitText
+      value: 
+      objectReference: {fileID: 2428745202946307128}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
       propertyPath: pauseMenu
       value: 
-      objectReference: {fileID: 5491054918841182700}
+      objectReference: {fileID: 8314869762256777755}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: pauseTitle
+      value: 
+      objectReference: {fileID: 3722428553952898998}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: resumeText
+      value: 
+      objectReference: {fileID: 1555180959157985386}
     - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
       propertyPath: pauseButton
       value: 
       objectReference: {fileID: 1827717736243540597}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: restartText
+      value: 
+      objectReference: {fileID: 1923110675659267245}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
 --- !u!4 &496284083816620878 stripped

@@ -568,8 +568,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -466.26, y: -202.61378}
-  m_SizeDelta: {x: 298.32, y: 75.6658}
+  m_AnchoredPosition: {x: -465, y: -228}
+  m_SizeDelta: {x: 215.4775, y: 91.8158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &235573939
 MonoBehaviour:
@@ -858,8 +858,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 211.33621, y: 40.00001}
-  m_SizeDelta: {x: 106.1136, y: 53.0568}
+  m_AnchoredPosition: {x: 156, y: 45}
+  m_SizeDelta: {x: 71.0267, y: 71.0267}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372894553
 MonoBehaviour:
@@ -937,7 +937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 784467dfb976c4346b7a6bb5b24ae948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9142495cd5ab4a4da85ee8dd4b7eeea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3024,6 +3024,7 @@ MonoBehaviour:
   bestResultLabel: {fileID: 240649780}
   levelSelPlayButtonLabel: {fileID: 1921858331}
   description: {fileID: 914091024}
+  bonusCode: {fileID: 389845094}
   activePlay: {r: 0, g: 0, b: 0, a: 0}
   unactivePlay: {r: 0, g: 0, b: 0, a: 0}
   playButton: {fileID: 0}
@@ -3547,8 +3548,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 84, y: 40}
-  m_SizeDelta: {x: 106.1136, y: 53.0568}
+  m_AnchoredPosition: {x: 65.55731, y: 44.999977}
+  m_SizeDelta: {x: 71.0267, y: 71.0267}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814281276
 MonoBehaviour:
@@ -3626,7 +3627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b9a208c8dc17ec4a9751b0849389abc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9bc3094a6d7308c439d247a16ed82e0e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4252,7 +4253,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u043E\u0434"
+  m_Text: Enter a code
 --- !u!222 &1943680000
 CanvasRenderer:
   m_ObjectHideFlags: 0

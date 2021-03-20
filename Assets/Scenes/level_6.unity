@@ -48543,6 +48543,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1413fa72ab207774695e3b1bf82122e4, type: 3}
+--- !u!114 &6402800656781664971 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3722428553952898998, guid: 1413fa72ab207774695e3b1bf82122e4, type: 3}
+  m_PrefabInstance: {fileID: 6402800656781664970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6402800656781664972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2428745202946307128, guid: 1413fa72ab207774695e3b1bf82122e4, type: 3}
+  m_PrefabInstance: {fileID: 6402800656781664970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6402800656781664973 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1923110675659267245, guid: 1413fa72ab207774695e3b1bf82122e4, type: 3}
+  m_PrefabInstance: {fileID: 6402800656781664970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6402800656781664974 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1555180959157985386, guid: 1413fa72ab207774695e3b1bf82122e4, type: 3}
+  m_PrefabInstance: {fileID: 6402800656781664970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6539202770700174929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48676,13 +48720,29 @@ PrefabInstance:
       value: sysObj
       objectReference: {fileID: 0}
     - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: exitText
+      value: 
+      objectReference: {fileID: 6402800656781664972}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1048349353}
     - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: pauseTitle
+      value: 
+      objectReference: {fileID: 6402800656781664971}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: resumeText
+      value: 
+      objectReference: {fileID: 6402800656781664974}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
       propertyPath: pauseButton
       value: 
       objectReference: {fileID: 410796346}
+    - target: {fileID: 6577406487894573150, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
+      propertyPath: restartText
+      value: 
+      objectReference: {fileID: 6402800656781664973}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfa0c1485b4a00240b7cf481c34181a1, type: 3}
 --- !u!1 &6844528608077018952

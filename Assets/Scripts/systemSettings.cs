@@ -9,9 +9,10 @@ public class systemSettings : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject pauseButton;
-    Text ScoreText;
+    Text ScoreText, gameVersion;
     Ball  ball;
-    Text gameVersion;
+    public Text resumeText, restartText, exitText,pauseTitle;
+
 
 
     //public Ball src, loopsrc;
@@ -32,6 +33,7 @@ public class systemSettings : MonoBehaviour
         {
             sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
         }
+
         gameVersion = GameObject.Find("(R)").GetComponent<Text>();
         gameVersion.text = ("v"+ Application.version + "_alpha");
         ScoreText = GameObject.Find("scoreText").GetComponent<Text>();
@@ -40,7 +42,20 @@ public class systemSettings : MonoBehaviour
         Application.targetFrameRate = 300;
         AudioListener.volume = 1f;
 
-
+        if(sr.eng == false)
+        {
+            resumeText.text = "Продолжить";
+            restartText.text = "Начать заново";
+            exitText.text = "В главное меню";
+            pauseTitle.text = "Пауза";
+        }
+        else
+        {
+            resumeText.text = "Resume";
+            restartText.text = "Restart";
+            exitText.text = "Go to the menu";
+            pauseTitle.text = "Pause";
+        }
     }
 
 
