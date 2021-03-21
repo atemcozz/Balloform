@@ -45,15 +45,15 @@ public class systemSettings : MonoBehaviour
         if(sr.eng == false)
         {
             resumeText.text = "Продолжить";
-            restartText.text = "Начать заново";
-            exitText.text = "В главное меню";
+            restartText.text = "Начать \n заново";
+            exitText.text = "В главное \n меню";
             pauseTitle.text = "Пауза";
         }
         else
         {
             resumeText.text = "Resume";
             restartText.text = "Restart";
-            exitText.text = "Go to the menu";
+            exitText.text = "Go to the \n main menu";
             pauseTitle.text = "Pause";
         }
     }
