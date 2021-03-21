@@ -122,9 +122,10 @@ public class levelSelect : MonoBehaviour
     }
     public void OnPreviewClick()
     {
+        src.PlayOneShot(ui);
        if(ps.selLevel <= ps.levelProgress && ps.selLevel != 0)
         {
-            src.PlayOneShot(ui);
+            
             PlayerPrefs.DeleteAll();
             SceneManager.LoadScene("level_" + ps.selLevel);
         }
@@ -251,6 +252,11 @@ currentScore.text = sr.current[ps.selLevel].ToString();
         sr.eng = true;
         SaveRecord();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void OnVkButtonDown()
+    {
+        src.PlayOneShot(ui);
+        Application.OpenURL("https://vk.com/balloform");
     }
     public void SaveRecord()
     {

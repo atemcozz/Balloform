@@ -52,10 +52,14 @@ public class tutorialScreen : MonoBehaviour
         if (selLevel < 7)
         {
             selLevel++;
-          if(sr.eng == false)  image.sprite = russprites[selLevel];
-          else image.sprite = engsprites[selLevel];
+            if (sr.eng == false) image.sprite = russprites[selLevel];
+            else image.sprite = engsprites[selLevel];
         }
-        else SceneManager.LoadScene("level_0");
+        else
+        {
+            PlayerPrefs.DeleteAll();
+            SceneManager.LoadScene("level_0");
+        }
     }
     public void OnLastButtonDown()
     {
@@ -71,8 +75,12 @@ public class tutorialScreen : MonoBehaviour
             if (sr.eng == false) image.sprite = russprites[selLevel];
             else image.sprite = engsprites[selLevel];
         }
-        else SceneManager.LoadScene("Menu");
-        
+        else
+        {
+            PlayerPrefs.SetInt("menu", 1);
+            SceneManager.LoadScene("Menu");
+        }
+
 
         
     }

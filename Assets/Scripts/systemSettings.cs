@@ -86,7 +86,7 @@ public class systemSettings : MonoBehaviour
     }
     public void OnPauseButtonClick()
     {
-        
+
         src.PlayOneShot(ui);
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
