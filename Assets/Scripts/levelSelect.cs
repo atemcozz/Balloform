@@ -22,6 +22,8 @@ public class levelSelect : MonoBehaviour
     public GameObject About;
     public GameObject LevelSelect;
     public InputField field;
+    AudioSource src;
+    AudioClip ui;
 
     public Text playText, aboutText, exitText, currentScore, bestScore, currentResult,bestResultLabel, levelSelPlayButtonLabel, description, bonusCode;
     string level;
@@ -57,6 +59,8 @@ public class levelSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        src = gameObject.AddComponent<AudioSource>();
+        ui = Resources.Load<AudioClip>("Sounds/ui");
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))
         {
             sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
@@ -108,18 +112,19 @@ public class levelSelect : MonoBehaviour
         if (ps.selLevel > 0) ps.selLevel--;
        
         Debug.Log(ps.selLevel);
+        
     }
     public void OnRightButtonClick()
     {
         ps.selLevel++;
-
+        
         Debug.Log(ps.selLevel);
     }
     public void OnPreviewClick()
     {
        if(ps.selLevel <= ps.levelProgress && ps.selLevel != 0)
         {
-           
+            src.PlayOneShot(ui);
             PlayerPrefs.DeleteAll();
             SceneManager.LoadScene("level_" + ps.selLevel);
         }
@@ -138,7 +143,8 @@ public class levelSelect : MonoBehaviour
         playButtonBlank = GameObject.Find("playButtonBlank");
 currentScore.text = sr.current[ps.selLevel].ToString();
         bestScore.text = sr.records[ps.selLevel].ToString();
-         playButton.GetComponent<Image>().color = new Color(0f,200f/255f,60f/255f);
+        if(!PlayerPrefs.HasKey("menu")) src.PlayOneShot(ui);
+        playButton.GetComponent<Image>().color = new Color(0f,200f/255f,60f/255f);
         if(sr.current[ps.selLevel] == sr.records[ps.selLevel] && sr.current[ps.selLevel] != 0) {
 
           if(sr.eng == false)  currentResult.text = "Новый рекорд!";
@@ -158,16 +164,17 @@ currentScore.text = sr.current[ps.selLevel].ToString();
         LevelSelect.SetActive(false);
         About.SetActive(false);
         MainMenu.SetActive(true);
-        
+        src.PlayOneShot(ui);
         //SceneManager.LoadScene("Menu");
     }
     public void OnQuitButtonClick()
     {
+        src.PlayOneShot(ui);
         Application.Quit();
     }
     public void OnAboutButtonClick()
     {
-       
+        src.PlayOneShot(ui);
         About.SetActive(true);
         MainMenu.SetActive(false);
 
@@ -187,7 +194,7 @@ currentScore.text = sr.current[ps.selLevel].ToString();
             //playButton.SetActive(false);
             playButton.GetComponent<Image>().color = new Color(128f/255f,128f/255f,128f/255f);
             
-           if (sr.eng == false) currentResult.text = "Последний результат:";
+            if (sr.eng == false) currentResult.text = "Последний результат:";
             else currentResult.text = "Last result:";
             currentResult.color = new Color(50f/255f,50f/255f,50f/255f);
             playButtonBlank.SetActive(false);
@@ -226,12 +233,13 @@ currentScore.text = sr.current[ps.selLevel].ToString();
            else labelT.GetComponent<Text>().text = ("Tutorial");
 
         }
-
+        src.PlayOneShot(ui);
 
     }
 
     public void OnRusLangButtonDown()
     {
+        src.PlayOneShot(ui);
         sr.eng = false;
         SaveRecord();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -239,6 +247,7 @@ currentScore.text = sr.current[ps.selLevel].ToString();
 
     public void OnEngLangButtonDown()
     {
+        src.PlayOneShot(ui);
         sr.eng = true;
         SaveRecord();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

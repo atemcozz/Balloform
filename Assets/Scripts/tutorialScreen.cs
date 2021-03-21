@@ -11,6 +11,8 @@ public class tutorialScreen : MonoBehaviour
     Sprite[] russprites, engsprites;
     public int selLevel = 0;
     public Image image;
+    AudioSource src;
+    AudioClip ui;
     public class SaveRecords
     {
 
@@ -21,6 +23,8 @@ public class tutorialScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        src = gameObject.AddComponent<AudioSource>();
+        ui = Resources.Load<AudioClip>("Sounds/ui");
         SaveRecords sr = new SaveRecords();
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))
         {
@@ -39,6 +43,7 @@ public class tutorialScreen : MonoBehaviour
     }
     public void OnNextButtonDown()
     {
+        src.PlayOneShot(ui);
         SaveRecords sr = new SaveRecords();
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))
         {
@@ -54,6 +59,7 @@ public class tutorialScreen : MonoBehaviour
     }
     public void OnLastButtonDown()
     {
+        src.PlayOneShot(ui);
         SaveRecords sr = new SaveRecords();
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))
         {

@@ -12,7 +12,8 @@ public class systemSettings : MonoBehaviour
     Text ScoreText, gameVersion;
     Ball  ball;
     public Text resumeText, restartText, exitText,pauseTitle;
-
+    AudioSource src;
+    AudioClip ui;
 
 
     //public Ball src, loopsrc;
@@ -28,6 +29,8 @@ public class systemSettings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        src = gameObject.AddComponent<AudioSource>();
+        ui = Resources.Load<AudioClip>("Sounds/ui");
         SaveRecords sr = new SaveRecords();
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))
         {
@@ -76,10 +79,15 @@ public class systemSettings : MonoBehaviour
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetInt("menu", 1);
+        AudioListener.volume = 1f;
+        src.PlayOneShot(ui);
         SceneManager.LoadScene("Menu");
+        
     }
     public void OnPauseButtonClick()
     {
+        
+        src.PlayOneShot(ui);
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
         pauseButton.SetActive(false);
@@ -92,11 +100,15 @@ public class systemSettings : MonoBehaviour
         pauseMenu.SetActive(false); 
         pauseButton.SetActive(true);
         AudioListener.volume = 1f;
+       
+        src.PlayOneShot(ui);
     }
     public void OnRestartButtonClick()
     {
         PlayerPrefs.DeleteAll();
         Time.timeScale = 1f;
+        AudioListener.volume = 1f;
+        src.PlayOneShot(ui);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
