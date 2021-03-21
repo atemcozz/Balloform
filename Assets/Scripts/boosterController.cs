@@ -5,12 +5,13 @@ using UnityEngine;
 public class boosterController : MonoBehaviour
 {
     //public Rigidbody2D rb;
+    public bool isSticky = false;
   public Ball ball;
   public float elevatorSpeed = 20f;
   public float boosterSpeed = 100f;
     AudioSource src;
     AudioClip booster;
-
+    public int col;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,11 @@ public class boosterController : MonoBehaviour
       src = gameObject.AddComponent<AudioSource>();
         src.loop = true;
         src.clip = booster;
-      
-       
+        src.spatialBlend = 1f;
+        src.rolloffMode = AudioRolloffMode.Linear;
+        src.minDistance = 20f;
+        src.maxDistance = 50f;
+
 
     }
 
@@ -82,20 +86,21 @@ public class boosterController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if ((other.gameObject.GetComponent<Rigidbody2D>() != null) && isSticky == false)
         {
+                 col++;
+                if (!src.isPlaying) src.Play();
             
-                src.Play();
             
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (isSticky == false && src.isPlaying)
         {
+            col--;
+            if(col == 0) src.Stop();
             
-                src.Stop();
-           
         }
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2263298399116079053}
   m_Layer: 9
   m_Name: part (1)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 2263298399493361763}
   m_Layer: 9
   m_Name: part (2)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 2263298399834394484}
   m_Layer: 9
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -717,7 +717,7 @@ GameObject:
   - component: {fileID: 2263298400952106504}
   m_Layer: 9
   m_Name: part (4)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 2263298401010108979}
   m_Layer: 9
   m_Name: part (3)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1164,7 +1164,7 @@ GameObject:
   - component: {fileID: 2263298401011235002}
   m_Layer: 9
   m_Name: part (5)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

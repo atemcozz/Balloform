@@ -18045,6 +18045,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 635021691}
+    - target: {fileID: 2743472735797317510, guid: 37684a6e037d44a4a9ca195689703a5d, type: 3}
+      propertyPath: isSticky
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4711228845733864408, guid: 37684a6e037d44a4a9ca195689703a5d, type: 3}
       propertyPath: m_Size.x
       value: 1.433795
@@ -22762,6 +22766,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 635021691}
+    - target: {fileID: 2743472735797317510, guid: 37684a6e037d44a4a9ca195689703a5d, type: 3}
+      propertyPath: isSticky
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4711228845733864408, guid: 37684a6e037d44a4a9ca195689703a5d, type: 3}
       propertyPath: m_Size.x
       value: 2.1595674
@@ -25102,6 +25110,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 635021691}
+    - target: {fileID: 2743472735797317510, guid: 37684a6e037d44a4a9ca195689703a5d, type: 3}
+      propertyPath: isSticky
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4711228845733864408, guid: 37684a6e037d44a4a9ca195689703a5d, type: 3}
       propertyPath: m_Size.x
       value: 1.4585382

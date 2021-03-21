@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 1840789637356587334}
   - component: {fileID: 1840789637356587333}
   - component: {fileID: 1840789637356587332}
+  - component: {fileID: 6096269778095349549}
   m_Layer: 9
   m_Name: part (1)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,11 +144,11 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 1840789637510785420}
-  m_BreakForce: 200
+  m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.70045227, y: -0.000001648464}
+  m_ConnectedAnchor: {x: 0.7004516, y: -0.000000412116}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -156,6 +157,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &6096269778095349549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840789637356587338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4043578d44f7b3042a56a20d3517a301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1840789637510785521
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,9 +182,10 @@ GameObject:
   - component: {fileID: 1840789637510785421}
   - component: {fileID: 1840789637510785420}
   - component: {fileID: 1840789637510785523}
+  - component: {fileID: 4510714270305429173}
   m_Layer: 9
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,11 +313,11 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 1840789638686563898}
-  m_BreakForce: 200
+  m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.7135451, y: 0}
+  m_ConnectedAnchor: {x: 0.71354574, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -312,6 +326,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &4510714270305429173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840789637510785521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4043578d44f7b3042a56a20d3517a301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1840789637851330272
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,9 +351,10 @@ GameObject:
   - component: {fileID: 1840789637851330300}
   - component: {fileID: 1840789637851330275}
   - component: {fileID: 1840789637851330274}
+  - component: {fileID: 3125900561814295561}
   m_Layer: 9
   m_Name: part (2)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -455,11 +482,11 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 1840789637356587333}
-  m_BreakForce: 200
+  m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.72140133, y: 0.000001648464}
+  m_ConnectedAnchor: {x: 0.72140193, y: 0.000000412116}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -468,6 +495,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &3125900561814295561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840789637851330272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4043578d44f7b3042a56a20d3517a301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1840789638098726958
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +654,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.35794175, y: 0.24787465}
-  m_ConnectedAnchor: {x: 0.32000116, y: 0}
+  m_ConnectedAnchor: {x: 0.3199999, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -637,9 +676,10 @@ GameObject:
   - component: {fileID: 1840789638686563899}
   - component: {fileID: 1840789638686563898}
   - component: {fileID: 1840789638686563897}
+  - component: {fileID: 2328884039893978669}
   m_Layer: 9
   m_Name: part (5)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -767,11 +807,11 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 1840789638779738254}
-  m_BreakForce: 200
+  m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.70045227, y: 0.000001648464}
+  m_ConnectedAnchor: {x: 0.70045227, y: 0.000000412116}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -780,6 +820,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &2328884039893978669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840789638686563903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4043578d44f7b3042a56a20d3517a301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1840789638687550640
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,9 +845,10 @@ GameObject:
   - component: {fileID: 1840789638687550643}
   - component: {fileID: 1840789638687550641}
   - component: {fileID: 1840789638687550642}
+  - component: {fileID: 3182255917118951468}
   m_Layer: 9
   m_Name: part (3)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -923,11 +976,11 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: 200
+  m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -32.773304, y: 11.38}
+  m_ConnectedAnchor: {x: 8.033841, y: 3.991264}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -936,6 +989,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &3182255917118951468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840789638687550640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4043578d44f7b3042a56a20d3517a301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1840789638691462577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,9 +1123,10 @@ GameObject:
   - component: {fileID: 1840789638779738248}
   - component: {fileID: 1840789638779738254}
   - component: {fileID: 1840789638779738255}
+  - component: {fileID: 8574747082495722323}
   m_Layer: 9
   m_Name: part (4)
-  m_TagString: Untagged
+  m_TagString: bridgePart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1188,11 +1254,11 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 1840789638687550641}
-  m_BreakForce: 200
+  m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.70045227, y: -0.000001648464}
+  m_ConnectedAnchor: {x: 0.700451, y: -0.000001236348}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1201,6 +1267,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &8574747082495722323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840789638779738253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4043578d44f7b3042a56a20d3517a301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1840789638891073681
 GameObject:
   m_ObjectHideFlags: 0
