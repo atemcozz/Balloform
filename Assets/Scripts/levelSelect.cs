@@ -145,15 +145,24 @@ public class levelSelect : MonoBehaviour
     }
     public void OnReturnButtonClick()
     {
-        LevelSelect.SetActive(false);
+        
         About.SetActive(false);
-        if (PartMenu.activeSelf == false) PartMenu.SetActive(true);
+
+        if (LevelSelect.activeSelf == true)
+        {
+            ps.selLevel = ps.levelProgress;
+            OnLoRButtonClick();
+            PartMenu.SetActive(true);
+            LevelSelect.SetActive(false);
+            
+        }
         else
         {
             PartMenu.SetActive(false);
             MainMenu.SetActive(true);
+            src.PlayOneShot(ui);
         }
-        src.PlayOneShot(ui);
+        
         //SceneManager.LoadScene("Menu");
     }
     public void OnQuitButtonClick()
@@ -252,15 +261,18 @@ public class levelSelect : MonoBehaviour
     }
     public void OnPartButtonDown()
     {
+       
         
         PartMenu.SetActive(false);
         MainMenu.SetActive(false);
         LevelSelect.SetActive(true);
+
         bestScore = GameObject.Find("bestScore").GetComponent<Text>();
         currentScore = GameObject.Find("currentScore").GetComponent<Text>();
         currentResult = GameObject.Find("currentResult").GetComponent<Text>();
         playButton = GameObject.Find("playButton");
         playButtonBlank = GameObject.Find("playButtonBlank");
+
         currentScore.text = sr.current[ps.selLevel].ToString();
         bestScore.text = sr.records[ps.selLevel].ToString();
         if (!PlayerPrefs.HasKey("menu")) src.PlayOneShot(ui);
@@ -279,8 +291,7 @@ public class levelSelect : MonoBehaviour
             else currentResult.text = "Last result:";
             currentResult.color = new Color(50f / 255f, 50f / 255f, 50f / 255f);
         }
-     
-
+        
     }
     public void OnBonusButtonDown(){
        if(field.text == "debug"){
