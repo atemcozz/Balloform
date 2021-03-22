@@ -2211,3 +2211,224 @@ System memory in use after: 62.5 MB.
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1734.
 Total: 3.403443 ms (FindLiveObjects: 0.292002 ms CreateObjectMapping: 0.089294 ms MarkObjects: 2.995974 ms  DeleteObjects: 0.022580 ms)
 
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000679 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.726 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1142 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.5 MB.
+System memory in use after: 62.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1737.
+Total: 5.619889 ms (FindLiveObjects: 0.315096 ms CreateObjectMapping: 0.107256 ms MarkObjects: 5.167773 ms  DeleteObjects: 0.027199 ms)
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000854 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.554 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1142 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.6 MB.
+System memory in use after: 62.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1740.
+Total: 3.653877 ms (FindLiveObjects: 0.306885 ms CreateObjectMapping: 0.093400 ms MarkObjects: 3.220236 ms  DeleteObjects: 0.030278 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 431.888616 seconds.
+  path: Assets/Minimal UI Sounds/Clack_Minimal UI Sounds.wav
+  artifactKey: Guid(5ed9970e17bfee943a6dff056dc3a9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minimal UI Sounds/Clack_Minimal UI Sounds.wav using Guid(5ed9970e17bfee943a6dff056dc3a9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f7069953b94f515422aa9db06b2cff') in 1.065750 seconds
+  Import took 1.070884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Minimal UI Sounds/Click 03_Minimal UI Sounds.wav
+  artifactKey: Guid(05b517e735c2cec4abd77c440b4c76ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minimal UI Sounds/Click 03_Minimal UI Sounds.wav using Guid(05b517e735c2cec4abd77c440b4c76ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b75386e3e0d00f7fc21915c4ff56add1') in 0.038534 seconds
+  Import took 0.041796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000521 seconds.
+  path: Assets/Minimal UI Sounds/Tiny Click_Minimal UI Sounds.wav
+  artifactKey: Guid(8c258dca7e08fb1438113b0b75348f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minimal UI Sounds/Tiny Click_Minimal UI Sounds.wav using Guid(8c258dca7e08fb1438113b0b75348f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ed27bd857f56d429d6610df707285c') in 0.021405 seconds
+  Import took 0.025873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000746 seconds.
+  path: Assets/Minimal UI Sounds/Ping_Minimal UI Sounds.wav
+  artifactKey: Guid(19ee23220d478354ca29f732069ff0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minimal UI Sounds/Ping_Minimal UI Sounds.wav using Guid(19ee23220d478354ca29f732069ff0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd96f84f5a02fd47002fe5fcb6da7ac25') in 0.047934 seconds
+  Import took 0.067407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Minimal UI Sounds/Click 02_Minimal UI Sounds.wav
+  artifactKey: Guid(030515f205b54fc478961cbe39c4e75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minimal UI Sounds/Click 02_Minimal UI Sounds.wav using Guid(030515f205b54fc478961cbe39c4e75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb1a480d04f389fe167112229e0b779') in 0.048420 seconds
+  Import took 0.060994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Minimal UI Sounds/Funny Click_Minimal UI Sounds.wav
+  artifactKey: Guid(70e02441ad3cd8f488092b6a4933e446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minimal UI Sounds/Funny Click_Minimal UI Sounds.wav using Guid(70e02441ad3cd8f488092b6a4933e446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d14636f165601b98660af48b444ac69') in 0.045158 seconds
+  Import took 0.048138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Minimal UI Sounds/Spacey Click_Minimal UI Sounds.wav
+  artifactKey: Guid(4fb135d3c45ee7343ba34122f8adc35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minimal UI Sounds/Spacey Click_Minimal UI Sounds.wav using Guid(4fb135d3c45ee7343ba34122f8adc35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3a9f7b398a6e3049d95896ed78c451') in 0.033835 seconds
+  Import took 0.037237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Minimal UI Sounds/Click 01_Minimal UI Sounds.wav
+  artifactKey: Guid(99348d26b121bdf40bca2ff30b000207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minimal UI Sounds/Click 01_Minimal UI Sounds.wav using Guid(99348d26b121bdf40bca2ff30b000207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77761e573d60cf297c5a1bf8516826a1') in 0.014377 seconds
+  Import took 0.017399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Minimal UI Sounds/Click 04_Minimal UI Sounds.wav
+  artifactKey: Guid(9df4c2e414fd7d847978300d2a2b0213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minimal UI Sounds/Click 04_Minimal UI Sounds.wav using Guid(9df4c2e414fd7d847978300d2a2b0213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '997edf60904c1ef5c13d81622047002a') in 0.022190 seconds
+  Import took 0.025153 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Water already registered
+0x00007ff77a328c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff77a331069 (Unity) StackWalker::ShowCallstack
+0x00007ff77b80564c (Unity) GetStacktrace
+0x00007ff77c8c4803 (Unity) DebugStringToFile
+0x00007ff77931f9e1 (Unity) TagManager::RegisterLayer
+0x00007ff7793117f4 (Unity) TagManager::Transfer<YAMLRead>
+0x00007ff77932b11a (Unity) TagManager::VirtualRedirectTransfer
+0x00007ff77a28314d (Unity) SerializedFile::ReadObject
+0x00007ff77a247da4 (Unity) PersistentManager::ReloadFromDisk
+0x00007ff77b93ce36 (Unity) ReloadSerializedSingletons
+0x00007ff77b937e9a (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff77ba020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff77ba04230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff77ba079be (Unity) asio::io_service::run
+0x00007ff77b97dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77b97dda0 (Unity) RunAssetImporterV2
+0x00007ff77ae9d73b (Unity) Application::InitializeProject
+0x00007ff77b812be2 (Unity) WinMain
+0x00007ff77d658fc6 (Unity) __scrt_common_main_seh
+0x00007ffddc7c13d2 (KERNEL32) BaseThreadInitThunk
+0x00007ffddcb354f4 (ntdll) RtlUserThreadStart
+
+Registering precompiled user dll's ...
+Registered in 0.000695 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.595 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1142 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.7 MB.
+System memory in use after: 62.8 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1746.
+Total: 3.127863 ms (FindLiveObjects: 0.382323 ms CreateObjectMapping: 0.154469 ms MarkObjects: 2.526410 ms  DeleteObjects: 0.062095 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.102004 seconds.
+  path: Assets/Sprites/tutorial
+  artifactKey: Guid(e0f73ba1b7b30eb4f912eba64074ceba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/tutorial using Guid(e0f73ba1b7b30eb4f912eba64074ceba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec33c6c65189189045e741000671634c') in 0.025895 seconds
+  Import took 0.040325 seconds .
+
