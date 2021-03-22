@@ -121,7 +121,7 @@ public class commonBalls : MonoBehaviour
 
 
         loopsrc.pitch = rb.velocity.x / 7;
-        if (!isBox)
+        if (isBox == false)
         {
             checkGround();
             groundCheck.transform.position = new Vector2(rb.transform.position.x, rb.transform.position.y - (GetComponent<CircleCollider2D>().bounds.size.y / 2));
@@ -135,10 +135,7 @@ public class commonBalls : MonoBehaviour
                 loopsrc.Stop();
             }
         }
-        else
-        {
-            
-        }
+        
     }
     void checkGround()
     {

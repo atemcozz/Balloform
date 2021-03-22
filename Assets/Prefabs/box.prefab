@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6318774030000364877}
   - component: {fileID: 6318774030000364866}
   - component: {fileID: 6318774030000364867}
+  - component: {fileID: 79164307953329508}
   m_Layer: 7
   m_Name: box
   m_TagString: phObj
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -679203917
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e5adb33faff3c4c4389f00517476f2fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -131,3 +132,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &79164307953329508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6318774030000364865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8e497372d278e4191f23383ad5001a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBox: 1
+  isGround: 0
+  checkRadius: 0.3

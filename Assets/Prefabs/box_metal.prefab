@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7867176203528194914}
   - component: {fileID: 7867176203528194915}
   - component: {fileID: 7867176203528194912}
-  m_Layer: 9
+  - component: {fileID: 8581808660497885178}
+  m_Layer: 7
   m_Name: box_metal
   m_TagString: phObj
   m_Icon: {fileID: 0}
@@ -131,3 +132,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.04, y: 5.04}
   m_EdgeRadius: 0
+--- !u!114 &8581808660497885178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867176203528194927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8e497372d278e4191f23383ad5001a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBox: 1
+  isGround: 0
+  checkRadius: 0.3
