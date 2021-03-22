@@ -94,11 +94,11 @@ public class commonBalls : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D other)
     {
-        
+        if (isBox && loopsrc.isPlaying && other.gameObject.layer == 9) loopsrc.Stop();
     }
     private void OnCollisionStay2D(Collision2D other)
     {
-        if (isBox && !loopsrc.isPlaying) loopsrc.Play();
+        if (isBox && !loopsrc.isPlaying && other.gameObject.layer == 9) loopsrc.Play();
     }
     private void OnTriggerEnter2D(Collider2D col)
     {

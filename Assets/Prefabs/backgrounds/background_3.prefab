@@ -155,7 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f691a6082c0914409399d6810600528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxFactor: 0.1
+  isSame: 1
+  parallaxFactorX: 0.05
+  parallaxFactorY: 0
 --- !u!1 &7470130152780623393
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,4 +253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f691a6082c0914409399d6810600528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxFactor: 0.15
+  isSame: 1
+  parallaxFactorX: 0.08
+  parallaxFactorY: 0
