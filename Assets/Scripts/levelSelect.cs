@@ -21,11 +21,12 @@ public class levelSelect : MonoBehaviour
     public GameObject MainMenu;
     public GameObject About;
     public GameObject LevelSelect;
+    public GameObject PartMenu;
     public InputField field;
     AudioSource src;
     AudioClip ui;
-
-    public Text playText, aboutText, exitText, currentScore, bestScore, currentResult,bestResultLabel, levelSelPlayButtonLabel, description, bonusCode;
+    public float levelsInPart = 7;
+    public Text playText, aboutText, exitText, currentScore, bestScore, currentResult,bestResultLabel, levelSelPlayButtonLabel, description, bonusCode, partCompleteText;
     string level;
     
 
@@ -88,7 +89,8 @@ public class levelSelect : MonoBehaviour
             levelSelPlayButtonLabel.text = "Играть";
             description.text = "Balloform  -  игра-головоломка в минималистичном стиле, которая унаследовала и собрала воедино элементы таких культовых игр, как Ballance и Bounce, но в тоже время смогла сохранить свой уникальный стиль";
         }
-        
+        if (sr.eng == true) partCompleteText.text = "Completed: " + Math.Round(ps.levelProgress * 100 / levelsInPart, 1) + "%";
+        else partCompleteText.text = "Пройдено: " + Math.Round(ps.levelProgress * 100 / levelsInPart, 1) + "%";
         ps.selLevel = ps.levelProgress;
         preview.GetComponent<Image>().sprite = prsprites[ps.selLevel + 1];
 
@@ -97,7 +99,7 @@ public class levelSelect : MonoBehaviour
         labelT.GetComponent<Text>().text = (level + ps.selLevel);
         if (PlayerPrefs.HasKey("menu"))
         {
-            OnPlayButtonClick();
+            OnPartButtonDown();
             PlayerPrefs.DeleteKey("menu");
         }
     }
@@ -135,36 +137,22 @@ public class levelSelect : MonoBehaviour
     public void OnPlayButtonClick()
     {
         MainMenu.SetActive(false);
-        LevelSelect.SetActive(true);
+        PartMenu.SetActive(true);
+        src.PlayOneShot(ui);
+       
         //SceneManager.LoadScene("levelSelect");
-       bestScore = GameObject.Find("bestScore").GetComponent<Text>();
-        currentScore = GameObject.Find("currentScore").GetComponent<Text>();
-        currentResult = GameObject.Find("currentResult").GetComponent<Text>();
-        playButton = GameObject.Find("playButton");
-        playButtonBlank = GameObject.Find("playButtonBlank");
-currentScore.text = sr.current[ps.selLevel].ToString();
-        bestScore.text = sr.records[ps.selLevel].ToString();
-        if(!PlayerPrefs.HasKey("menu")) src.PlayOneShot(ui);
-        playButton.GetComponent<Image>().color = new Color(0f,200f/255f,60f/255f);
-        if(sr.current[ps.selLevel] == sr.records[ps.selLevel] && sr.current[ps.selLevel] != 0) {
 
-          if(sr.eng == false)  currentResult.text = "Новый рекорд!";
-          else currentResult.text = "New Record!";
-
-            currentResult.color = new Color(0f,200f/255f,60f/255f);
-        }
-        else {
-            if (sr.eng == false) currentResult.text = "Последний результат:";
-            else currentResult.text = "Last result:";
-            currentResult.color = new Color(50f/255f,50f/255f,50f/255f);
-        }
-        
     }
     public void OnReturnButtonClick()
     {
         LevelSelect.SetActive(false);
         About.SetActive(false);
-        MainMenu.SetActive(true);
+        if (PartMenu.activeSelf == false) PartMenu.SetActive(true);
+        else
+        {
+            PartMenu.SetActive(false);
+            MainMenu.SetActive(true);
+        }
         src.PlayOneShot(ui);
         //SceneManager.LoadScene("Menu");
     }
@@ -262,7 +250,38 @@ currentScore.text = sr.current[ps.selLevel].ToString();
     {
         File.WriteAllText(Application.persistentDataPath + "/saveload.json", JsonUtility.ToJson(sr));
     }
+    public void OnPartButtonDown()
+    {
+        
+        PartMenu.SetActive(false);
+        MainMenu.SetActive(false);
+        LevelSelect.SetActive(true);
+        bestScore = GameObject.Find("bestScore").GetComponent<Text>();
+        currentScore = GameObject.Find("currentScore").GetComponent<Text>();
+        currentResult = GameObject.Find("currentResult").GetComponent<Text>();
+        playButton = GameObject.Find("playButton");
+        playButtonBlank = GameObject.Find("playButtonBlank");
+        currentScore.text = sr.current[ps.selLevel].ToString();
+        bestScore.text = sr.records[ps.selLevel].ToString();
+        if (!PlayerPrefs.HasKey("menu")) src.PlayOneShot(ui);
+        playButton.GetComponent<Image>().color = new Color(0f, 200f / 255f, 60f / 255f);
+        if (sr.current[ps.selLevel] == sr.records[ps.selLevel] && sr.current[ps.selLevel] != 0)
+        {
 
+            if (sr.eng == false) currentResult.text = "Новый рекорд!";
+            else currentResult.text = "New Record!";
+
+            currentResult.color = new Color(0f, 200f / 255f, 60f / 255f);
+        }
+        else
+        {
+            if (sr.eng == false) currentResult.text = "Последний результат:";
+            else currentResult.text = "Last result:";
+            currentResult.color = new Color(50f / 255f, 50f / 255f, 50f / 255f);
+        }
+     
+
+    }
     public void OnBonusButtonDown(){
        if(field.text == "debug"){
            PlayerPrefs.DeleteAll();
