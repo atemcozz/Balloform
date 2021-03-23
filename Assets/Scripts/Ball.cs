@@ -191,14 +191,27 @@ public class Ball : MonoBehaviour
         
             if ((save.ballState == 1 || save.ballState == 2) && rb.velocity.magnitude > 1.5f && other.gameObject.layer != 7 ) src.PlayOneShot(hit, rb.velocity.magnitude/10);
            else if (save.ballState == 0) src.PlayOneShot(paperHit);
-        
-            
-        
-            
 
 
 
-        
+        if (other.gameObject.tag == "trap")
+        {
+            src.PlayOneShot(lose, 3);
+            PlayerPrefs.SetInt("ballstate", save.ballState);
+            rb.bodyType = RigidbodyType2D.Static;
+
+
+            StartCoroutine(Fade(false));
+
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+
+
+        }
+
+
+
+
 
 
 
@@ -238,7 +251,7 @@ public class Ball : MonoBehaviour
             PlayerPrefs.SetInt("ballstate", save.ballState);
             rb.bodyType = RigidbodyType2D.Static;
             
-            // LINUX 
+            
             StartCoroutine(Fade(false));
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
