@@ -242,6 +242,8 @@ MonoBehaviour:
   ignoreRaycast:
     serializedVersion: 2
     m_Bits: 2048
+  type: 0
+  Spread: 0
 --- !u!1 &7279878033289528892
 GameObject:
   m_ObjectHideFlags: 0

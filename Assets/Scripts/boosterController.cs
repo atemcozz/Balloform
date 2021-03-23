@@ -86,7 +86,7 @@ public class boosterController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.gameObject.GetComponent<Rigidbody2D>() != null) && isSticky == false)
+        if ((other.gameObject.GetComponent<Rigidbody2D>() != null) && isSticky == false  && other.gameObject.layer != 11)
         {
                  col++;
                 if (!src.isPlaying) src.Play();
@@ -96,7 +96,7 @@ public class boosterController : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (isSticky == false && src.isPlaying)
+        if (isSticky == false && src.isPlaying && other.gameObject.layer != 11)
         {
             col--;
             if(col == 0) src.Stop();

@@ -6,7 +6,7 @@ public class turret : MonoBehaviour
 {
     public Transform ball;
     Vector2 direction;
-    public float offset = 0f;
+    float offset = 2f;
     public float range = 1f;
     GameObject bullet,bullet_2;
     Transform shotPoint;
@@ -32,7 +32,6 @@ public class turret : MonoBehaviour
         bullet = Resources.Load<GameObject>("bullet");
         bullet_2 = Resources.Load<GameObject>("bullet_2");
         shotPoint = transform.GetChild(0);
-      
         ball = GameObject.Find("ball_def").transform;
         src = gameObject.AddComponent<AudioSource>();
         shot = Resources.Load<AudioClip>("Sounds/turretShot");
