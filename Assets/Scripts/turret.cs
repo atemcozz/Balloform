@@ -8,7 +8,7 @@ public class turret : MonoBehaviour
     Vector2 direction;
     public float offset = 0f;
     public float range = 1f;
-    GameObject bullet;
+    GameObject bullet,bullet_2;
     Transform shotPoint;
     public RaycastHit2D rayInfo;
     public float startShotTime;
@@ -16,6 +16,13 @@ public class turret : MonoBehaviour
    public LayerMask ignoreRaycast;
     AudioSource src;
     AudioClip shot;
+   public enum TurretType
+    {
+        normal = 0,
+        speedy = 1,
+    }
+    [Header("Тип турели")]
+    public TurretType type;
     [Header("Разброс пули в градусах")]
     public float Spread = 0f;
    
@@ -23,11 +30,13 @@ public class turret : MonoBehaviour
     void Start()
     {
         bullet = Resources.Load<GameObject>("bullet");
+        bullet_2 = Resources.Load<GameObject>("bullet_2");
         shotPoint = transform.GetChild(0);
         ignoreRaycast = LayerMask.NameToLayer("ignoreRaycast");
         ball = GameObject.Find("ball_def").transform;
         src = gameObject.AddComponent<AudioSource>();
         shot = Resources.Load<AudioClip>("Sounds/turretShot");
+       
     }
 
     // Update is called once per frame
@@ -49,7 +58,8 @@ public class turret : MonoBehaviour
             if (ShotTime <= 0)
             {
                 
-                Instantiate(bullet, shotPoint.position, Quaternion.Euler(0f, 0f, rotZ - 90 + Random.Range(0-Spread,0+Spread)));
+                if(type == 0) Instantiate(bullet, shotPoint.position, Quaternion.Euler(0f, 0f, rotZ - 90 + Random.Range(0-Spread,0+Spread)));
+                else Instantiate(bullet_2, shotPoint.position, Quaternion.Euler(0f, 0f, rotZ - 90 + Random.Range(0 - Spread, 0 + Spread)));
                 src.PlayOneShot(shot);
                 ShotTime = startShotTime;
             }
