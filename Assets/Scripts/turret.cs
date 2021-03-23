@@ -32,7 +32,7 @@ public class turret : MonoBehaviour
         bullet = Resources.Load<GameObject>("bullet");
         bullet_2 = Resources.Load<GameObject>("bullet_2");
         shotPoint = transform.GetChild(0);
-        ignoreRaycast = LayerMask.NameToLayer("ignoreRaycast");
+      
         ball = GameObject.Find("ball_def").transform;
         src = gameObject.AddComponent<AudioSource>();
         shot = Resources.Load<AudioClip>("Sounds/turretShot");
@@ -50,7 +50,7 @@ public class turret : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
        
       
-        rayInfo = Physics2D.Raycast(shotPoint.position, direction, range);
+        rayInfo = Physics2D.Raycast(shotPoint.position, direction, range, ~ignoreRaycast);
         Debug.DrawLine(transform.position, direction);
        
         if (rayInfo == true && rayInfo.collider.transform == ball)
