@@ -11583,6 +11583,14 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 914504695}
+    - target: {fileID: 7279878033091043542, guid: bdd7ee54f56ef444e8d2be740a44e612, type: 3}
+      propertyPath: Spread
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279878033091043542, guid: bdd7ee54f56ef444e8d2be740a44e612, type: 3}
+      propertyPath: shotsPerTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7279878033289528892, guid: bdd7ee54f56ef444e8d2be740a44e612, type: 3}
       propertyPath: m_Name
       value: turret

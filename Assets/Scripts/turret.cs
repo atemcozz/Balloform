@@ -14,6 +14,11 @@ public class turret : MonoBehaviour
     public float startShotTime;
     float ShotTime;
    public LayerMask ignoreRaycast;
+    AudioSource src;
+    AudioClip shot;
+    [Header("Разброс пули в градусах")]
+    public float Spread = 0f;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +26,8 @@ public class turret : MonoBehaviour
         shotPoint = transform.GetChild(0);
         ignoreRaycast = LayerMask.NameToLayer("ignoreRaycast");
         ball = GameObject.Find("ball_def").transform;
+        src = gameObject.AddComponent<AudioSource>();
+        shot = Resources.Load<AudioClip>("Sounds/turretShot");
     }
 
     // Update is called once per frame
@@ -41,7 +48,9 @@ public class turret : MonoBehaviour
         {
             if (ShotTime <= 0)
             {
-                Instantiate(bullet, shotPoint.position, Quaternion.Euler(0f, 0f, rotZ - 90));
+                
+                Instantiate(bullet, shotPoint.position, Quaternion.Euler(0f, 0f, rotZ - 90 + Random.Range(0-Spread,0+Spread)));
+                src.PlayOneShot(shot);
                 ShotTime = startShotTime;
             }
             else ShotTime -= Time.deltaTime;

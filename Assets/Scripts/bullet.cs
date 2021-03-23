@@ -6,7 +6,7 @@ public class bullet : MonoBehaviour
 {
     float speed = 10;
   
-    [AddComponentMenu("Bullet lifetime in seconds")]
+    [Header("Bullet lifetime in seconds")]
    public float lifeTime = 5f;
     // Start is called before the first frame update
     void Start()
