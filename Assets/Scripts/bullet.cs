@@ -16,9 +16,9 @@ public class bullet : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D col)
     { 
-        
-       Destroy(gameObject);
-        
+       if(col.gameObject.layer != 11) Destroy(gameObject);
+
+
     }
     // Update is called once per frame
     void Update()

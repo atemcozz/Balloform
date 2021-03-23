@@ -50,9 +50,9 @@ public class turret : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
        
       
-        rayInfo = Physics2D.Raycast(shotPoint.position, direction, range,  ignoreRaycast);
+        rayInfo = Physics2D.Raycast(shotPoint.position, direction, range);
         Debug.DrawLine(transform.position, direction);
-
+       
         if (rayInfo == true && rayInfo.collider.transform == ball)
         {
             if (ShotTime <= 0)
