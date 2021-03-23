@@ -17384,6 +17384,10 @@ PrefabInstance:
       value: slowzone
       objectReference: {fileID: 0}
     - target: {fileID: 6433149270717602178, guid: 013532946833b5441b15436334733824, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433149270717602178, guid: 013532946833b5441b15436334733824, type: 3}
       propertyPath: m_TagString
       value: slowmo
       objectReference: {fileID: 0}
