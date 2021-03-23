@@ -20,6 +20,7 @@ public class turret : MonoBehaviour
         bullet = Resources.Load<GameObject>("bullet");
         shotPoint = transform.GetChild(0);
         ignoreRaycast = LayerMask.NameToLayer("ignoreRaycast");
+        ball = GameObject.Find("ball_def").transform;
     }
 
     // Update is called once per frame

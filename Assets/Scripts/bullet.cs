@@ -5,25 +5,26 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
     float speed = 10;
-    Rigidbody2D rb;
+  
     [AddComponentMenu("Bullet lifetime in seconds")]
    public float lifeTime = 5f;
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(destroyBullet());
-        rb = GetComponent<Rigidbody2D>();
+        
     }
-    void OnCollisionEnter2D()
+    public void OnCollisionEnter2D(Collision2D col)
     { 
+        
        Destroy(gameObject);
         
     }
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.up * Time.deltaTime * speed);
-        
+       transform.Translate(Vector2.up * Time.deltaTime * speed);
+       
     }
     IEnumerator destroyBullet()
     {
