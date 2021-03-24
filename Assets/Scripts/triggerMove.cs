@@ -11,9 +11,9 @@ public class triggerMove : MonoBehaviour
         horizontal = 1,
     }
     public Modes mode;
-    AudioSource src;
+    public AudioSource src;
     AudioClip bossMusic;
-    int isMoving;
+    public int isMoving;
     public float distance;
     float border;
     public float speed = 3;
@@ -27,6 +27,7 @@ public class triggerMove : MonoBehaviour
         src.loop = true;
         bossMusic = Resources.Load<AudioClip>("Sounds/boss_sound");
         src.clip = bossMusic;
+        if (PlayerPrefs.GetInt("boss") != 0 && !src.isPlaying) StartCoroutine(playBossMusic());
     }
 
     // Update is called once per frame
@@ -38,14 +39,17 @@ public class triggerMove : MonoBehaviour
         }
         if(mode == 0) obj.transform.position = new Vector2(obj.transform.position.x, obj.transform.position.y + speed * isMoving * Time.deltaTime);
         else obj.transform.position = new Vector2(obj.transform.position.x + speed * isMoving * Time.deltaTime, obj.transform.position.y );
+
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "Player"){
             isMoving = 1;
-            StartCoroutine(playBossMusic());
+          if(PlayerPrefs.GetInt("boss") !=2)  PlayerPrefs.SetInt("boss", 1);
+
+           if(!src.isPlaying) StartCoroutine(playBossMusic());
         }
     }
-   IEnumerator playBossMusic()
+   public IEnumerator playBossMusic()
     {
         src.Play();
         src.volume = 0f;
