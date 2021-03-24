@@ -3600,7 +3600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ps:
-    levelProgress: 7
+    levelProgress: 8
     selLevel: 0
   levelDescText:
   - "\u041E\u0437\u043D\u0430\u043A\u043E\u043C\u044C\u0442\u0435\u0441\u044C \u0441
@@ -3613,6 +3613,7 @@ MonoBehaviour:
   - "\u041D\u0435\u0431\u043E\u043B\u044C\u0448\u0438\u0435 \u043D\u0435\u043F\u043E\u043B\u0430\u0434\u043A\u0438"
   - "\u0413\u043E\u0441\u043F\u043E\u0434\u0441\u0442\u0432\u043E \u0432\u0435\u0440\u0435\u0432\u043E\u043A"
   - "\u0422\u043E\u0447\u043D\u043E\u0441\u0442\u044C"
+  - "\u0422\u0443\u0440\u0435\u043B\u044C\u043D\u043E\u0435 \u0432\u0435\u0441\u0435\u043B\u044C\u0435"
   englevelDescText:
   - Check out the basic mechanics of the game
   - The beginning of the path
@@ -3622,6 +3623,7 @@ MonoBehaviour:
   - Minor difficulties
   - Domination of the ropes
   - Accuracy
+  - Turret fun
   preview: {fileID: 1137196553}
   underText: {fileID: 1822952737}
   labelT: {fileID: 411024154}
@@ -3656,6 +3658,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2d27cdf74817e7f43808c0d18e726768, type: 3}
   - {fileID: 21300000, guid: 30bc3f01eed8c0b409b2b7968d791ba2, type: 3}
   - {fileID: 21300000, guid: 73d52e87d1d066188be6f3f8ce81484c, type: 3}
+  - {fileID: 21300000, guid: 77e1f3164a6bb16438039b48e6086287, type: 3}
 --- !u!4 &1434602306
 Transform:
   m_ObjectHideFlags: 0
