@@ -50,7 +50,7 @@ public class turret : MonoBehaviour
        
       
         rayInfo = Physics2D.Raycast(shotPoint.position, direction, range, ~ignoreRaycast);
-        Debug.DrawLine(transform.position, direction);
+        
        
         if (rayInfo == true && rayInfo.collider.transform == ball)
         {

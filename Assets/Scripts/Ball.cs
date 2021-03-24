@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Ball : MonoBehaviour
 {
     public Rigidbody2D rb;
-    
+    bool godMode = false;
     public float score = 1000f;
     public float speed = 1000f;
     public float moveInput;
@@ -145,6 +145,21 @@ public class Ball : MonoBehaviour
            
         }
 
+        //GODMODE
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+
+            if (godMode == false)
+            {
+                godMode = true;
+                Debug.Log("Godmode ON");
+            }
+            else {
+            godMode = false;
+                Debug.Log("Godmode OFF");
+            } 
+        }
+
         /*if (Input.GetKeyDown(KeyCode.R))
         {
             Debug.Log(sr.records[levelIndex]);
@@ -194,7 +209,7 @@ public class Ball : MonoBehaviour
 
 
 
-        if (other.gameObject.tag == "trap")
+        if (other.gameObject.tag == "trap" && godMode == false)
         {
             src.PlayOneShot(lose, 3);
             PlayerPrefs.SetInt("ballstate", save.ballState);
@@ -245,7 +260,7 @@ public class Ball : MonoBehaviour
 
         }
         
-        if (other.gameObject.tag == "trap")
+        if (other.gameObject.tag == "trap" && godMode == false)
         {
             src.PlayOneShot(lose, 3);
             PlayerPrefs.SetInt("ballstate", save.ballState);

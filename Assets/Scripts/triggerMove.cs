@@ -11,6 +11,8 @@ public class triggerMove : MonoBehaviour
         horizontal = 1,
     }
     public Modes mode;
+    AudioSource src;
+    AudioClip bossMusic;
     int isMoving;
     public float distance;
     float border;
@@ -20,8 +22,11 @@ public class triggerMove : MonoBehaviour
     {
         if (mode == 0) border = obj.transform.position.y + distance;
         else border = obj.transform.position.x + distance;
-
-
+        src = gameObject.AddComponent<AudioSource>();
+        src.playOnAwake = false;
+        src.loop = true;
+        bossMusic = Resources.Load<AudioClip>("Sounds/boss_sound");
+        src.clip = bossMusic;
     }
 
     // Update is called once per frame
@@ -37,6 +42,18 @@ public class triggerMove : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "Player"){
             isMoving = 1;
+            StartCoroutine(playBossMusic());
         }
+    }
+   IEnumerator playBossMusic()
+    {
+        src.Play();
+        src.volume = 0f;
+        for(float i = 0f; i<1f; i += 0.05f)
+        {
+            src.volume = i;
+            yield return new WaitForSeconds(0.05f);
+        }
+        
     }
 }
