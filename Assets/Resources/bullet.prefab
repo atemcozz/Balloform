@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  type: 0
   lifeTime: 5
 --- !u!58 &1246193072839402108
 CircleCollider2D:
@@ -178,7 +179,7 @@ TrailRenderer:
   m_SortingLayerID: 963024093
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Time: 0.1
+  m_Time: 0.15
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.64551884
@@ -208,7 +209,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.85098046, g: 0.20392159, b: 0, a: 0.9137255}
+      key0: {r: 1, g: 0.17260063, b: 0, a: 0.9137255}
       key1: {r: 0.85098046, g: 0.7411765, b: 0.34901962, a: 0.39607844}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}

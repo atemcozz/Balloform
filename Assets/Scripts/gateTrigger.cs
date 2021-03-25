@@ -21,8 +21,8 @@ public class gateTrigger : MonoBehaviour
         gateTargetPosEnd = new Vector2(gate.transform.position.x, 31f);
         if (PlayerPrefs.GetInt("boss") == 2)
         {
-            bossobj.transform.position = new Vector2(389f, bossobj.transform.position.y);
-            triggerMove.transform.position = new Vector2(366, triggerMove.transform.position.y);
+            bossobj.transform.position = new Vector2(385f, bossobj.transform.position.y);
+            triggerMove.transform.position = new Vector2(365f, triggerMove.transform.position.y);
             triggerMove.GetComponent<triggerMove>().isMoving = 0;
         }
 
@@ -48,8 +48,8 @@ public class gateTrigger : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && isCompleted == false)
         {
             PlayerPrefs.SetInt("boss", 2);
-            bossobj.transform.position = new Vector2(389f, bossobj.transform.position.y);
-            triggerMove.transform.position = new Vector2(363, triggerMove.transform.position.y);
+            bossobj.transform.position = new Vector2(385f, bossobj.transform.position.y);
+            triggerMove.transform.position = new Vector2(365f, triggerMove.transform.position.y);
             triggerMove.GetComponent<triggerMove>().isMoving = 0;
             barrier.SetActive(false);
             isMoving = true;
