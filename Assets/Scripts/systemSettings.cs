@@ -17,13 +17,14 @@ public class systemSettings : MonoBehaviour
 
 
     //public Ball src, loopsrc;
-
+    SaveRecords sr = new SaveRecords();
     public class SaveRecords
     {
 
         public List<float> records = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public List<float> current = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public bool eng = true;
+        public float volume = 1f;
     }
 
     // Start is called before the first frame update
@@ -31,19 +32,19 @@ public class systemSettings : MonoBehaviour
     {
         src = gameObject.AddComponent<AudioSource>();
         ui = Resources.Load<AudioClip>("Sounds/ui");
-        SaveRecords sr = new SaveRecords();
+       
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))
         {
             sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
         }
-
+        AudioListener.volume = sr.volume;
         gameVersion = GameObject.Find("(R)").GetComponent<Text>();
         gameVersion.text = ("v"+ Application.version + "_alpha");
         ScoreText = GameObject.Find("scoreText").GetComponent<Text>();
          ball = GameObject.Find("ball_def").GetComponent<Ball>();
  
         Application.targetFrameRate = 300;
-        AudioListener.volume = 1f;
+       
 
         if(sr.eng == false)
         {
@@ -75,11 +76,13 @@ public class systemSettings : MonoBehaviour
             
         }
     }
+    
     public void OnExitButtonClick()
     {
+        
         Time.timeScale = 1f;
         PlayerPrefs.SetInt("menu", 1);
-        AudioListener.volume = 1f;
+        AudioListener.volume = sr.volume;
         src.PlayOneShot(ui);
         SceneManager.LoadScene("Menu");
         
@@ -99,15 +102,15 @@ public class systemSettings : MonoBehaviour
         Time.timeScale = 1f;
         pauseMenu.SetActive(false); 
         pauseButton.SetActive(true);
-        AudioListener.volume = 1f;
-       
+        AudioListener.volume = sr.volume;
+
         src.PlayOneShot(ui);
     }
     public void OnRestartButtonClick()
     {
         PlayerPrefs.DeleteAll();
         Time.timeScale = 1f;
-        AudioListener.volume = 1f;
+        AudioListener.volume = sr.volume;
         src.PlayOneShot(ui);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

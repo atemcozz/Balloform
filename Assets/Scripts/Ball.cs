@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Ball : MonoBehaviour
 {
     public Rigidbody2D rb;
-    bool godMode = false;
+   
     public float score = 1000f;
     public float speed = 1000f;
     public float moveInput;
@@ -45,7 +45,7 @@ public class Ball : MonoBehaviour
     public AudioClip blob;
     //public AudioClip roll;
     //AudioSource source;
-   
+
     private string path;
     int levelIndex;
     [System.Serializable]
@@ -59,7 +59,6 @@ public class Ball : MonoBehaviour
 
         public List<float> records = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
         public List<float> current = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-        public bool eng = true;
 
     }
 
@@ -67,7 +66,6 @@ public class Ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         levelIndex = SceneManager.GetActiveScene().buildIndex - 1;
         ScoreText = GameObject.Find("scoreText").GetComponent<Text>();
         blob = Resources.Load<AudioClip>("Sounds/blob");
@@ -145,21 +143,6 @@ public class Ball : MonoBehaviour
            
         }
 
-        //GODMODE
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-
-            if (godMode == false)
-            {
-                godMode = true;
-                Debug.Log("Godmode ON");
-            }
-            else {
-            godMode = false;
-                Debug.Log("Godmode OFF");
-            } 
-        }
-
         /*if (Input.GetKeyDown(KeyCode.R))
         {
             Debug.Log(sr.records[levelIndex]);
@@ -169,8 +152,8 @@ public class Ball : MonoBehaviour
         loopsrc.pitch = rb.velocity.x / 7;
        
         if (!loopsrc.isPlaying && isGround){
-          // if (save.ballState == 1 || save.ballState == 2) src.PlayOneShot(hit, -rb.velocity.y / 10 * rb.mass);
-          // else src.PlayOneShot(paperHit);
+            if (save.ballState == 1 || save.ballState == 2) src.PlayOneShot(hit, -rb.velocity.y/10 * rb.mass);
+            else src.PlayOneShot(paperHit);
             loopsrc.Play();
         }    
         if(loopsrc.isPlaying && !isGround){
@@ -201,37 +184,15 @@ public class Ball : MonoBehaviour
             isGround = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         }
 
-        public void OnCollisionEnter2D(Collision2D other) {
+        private void OnCollisionEnter2D(Collision2D other) {
+            
+              
+              
+              
+              
 
-        
-            if ((save.ballState == 1 || save.ballState == 2) && rb.velocity.magnitude > 1.5f && other.gameObject.layer != 7 ) src.PlayOneShot(hit, rb.velocity.magnitude/10);
-           else if (save.ballState == 0) src.PlayOneShot(paperHit);
-
-
-
-        if (other.gameObject.tag == "trap" && godMode == false)
-        {
-            src.PlayOneShot(lose, 3);
-            PlayerPrefs.SetInt("ballstate", save.ballState);
-            rb.bodyType = RigidbodyType2D.Static;
-
-
-            StartCoroutine(Fade(false));
-
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
-
-
+            
         }
-
-
-
-
-
-
-
-
-    }
         private void OnCollisionExit2D(Collision2D other) {
             
         }
@@ -260,13 +221,13 @@ public class Ball : MonoBehaviour
 
         }
         
-        if (other.gameObject.tag == "trap" && godMode == false)
+        if (other.gameObject.tag == "trap")
         {
             src.PlayOneShot(lose, 3);
             PlayerPrefs.SetInt("ballstate", save.ballState);
             rb.bodyType = RigidbodyType2D.Static;
             
-            
+            // LINUX 
             StartCoroutine(Fade(false));
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -414,8 +375,25 @@ public class Ball : MonoBehaviour
     {
         if(isGround == true || (isInWater == true && save.ballState == 1))
         {
-            rb.AddForce(new Vector2(0f, jumpForce));
+            //rb.AddForce(new Vector2(0f, jumpForce));
+           
+            switch (save.ballState)
+            {
+                case 0:
+                    rb.velocity = new Vector2(rb.velocity.x, 12f);
+                    break;
 
+
+                case 1:
+                    rb.velocity = new Vector2(rb.velocity.x, 10.5f);
+                    break;
+
+                case 2:
+                    rb.velocity = new Vector2(rb.velocity.x, 6f);
+                    break;
+
+
+            }
         }
     }
 

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class levelSelect : MonoBehaviour
 {
-
+    public float textslider;
     public PermanentSave ps = new PermanentSave();
     public  string[] levelDescText = { "������������ � �������� ���������� ����", "������ ����", "������"};
     public string[] englevelDescText;
@@ -34,6 +34,7 @@ public class levelSelect : MonoBehaviour
     public Color unactivePlay;
     public GameObject playButton;
      public GameObject playButtonBlank;
+    public Slider volumeSlider;
     SaveRecords sr = new SaveRecords();
     public class SaveRecords
     {
@@ -41,6 +42,7 @@ public class levelSelect : MonoBehaviour
         public List<float> records = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
         public List<float> current = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
         public bool eng = true;
+        public float volume = 1f;
     }
 
 
@@ -60,12 +62,17 @@ public class levelSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         src = gameObject.AddComponent<AudioSource>();
         ui = Resources.Load<AudioClip>("Sounds/ui");
+
+        
+        
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))
         {
             sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
         }
+        AudioListener.volume = sr.volume;
         if (sr.eng == true)
         {
             playText.text = "Play";
@@ -175,7 +182,7 @@ public class levelSelect : MonoBehaviour
         src.PlayOneShot(ui);
         About.SetActive(true);
         MainMenu.SetActive(false);
-
+        volumeSlider.value = sr.volume;
         //SceneManager.LoadScene("About");
     }
     public void OnLoRButtonClick()
@@ -303,5 +310,12 @@ public class levelSelect : MonoBehaviour
            SceneManager.LoadScene("bonus_1");
        }
 
+    }
+    public void OnSliderValueChanged()
+    {
+        textslider = volumeSlider.value;
+        AudioListener.volume = volumeSlider.value;
+        sr.volume = volumeSlider.value;
+        SaveRecord();
     }
 }
