@@ -205,25 +205,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: OnLeftButtonClick
-        m_Mode: 1
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: OnLoRButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 25563238}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -349,8 +337,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
         m_MethodName: OnReturnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -561,8 +549,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
         m_MethodName: OnPlayButtonClick
         m_Mode: 1
         m_Arguments:
@@ -851,8 +839,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
         m_MethodName: OnReturnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -984,9 +972,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: OnQuitButtonClick
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
+        m_MethodName: OnExitButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1116,7 +1104,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
         m_MethodName: OnEngLangButtonDown
         m_Mode: 1
@@ -1406,9 +1394,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: OnPartButtonDown
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
+        m_MethodName: OnPartButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1883,7 +1871,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
         m_MethodName: OnVkButtonDown
         m_Mode: 1
@@ -2016,7 +2004,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
         m_MethodName: OnPreviewClick
         m_Mode: 1
@@ -2255,7 +2243,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
         m_MethodName: OnBonusButtonDown
         m_Mode: 1
@@ -2656,7 +2644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1032038009
 Transform:
   m_ObjectHideFlags: 0
@@ -2820,7 +2808,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
         m_MethodName: OnPreviewClick
         m_Mode: 1
@@ -3557,8 +3545,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
         m_MethodName: OnReturnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -3622,7 +3610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1333786960
 Transform:
   m_ObjectHideFlags: 0
@@ -3726,7 +3714,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1434602306}
-  - component: {fileID: 1434602305}
+  - component: {fileID: 1434602307}
+  - component: {fileID: 1434602308}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -3734,83 +3723,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1434602305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434602304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c17da2bec5d1f48489a48c509c41ac19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textslider: 0
-  ps:
-    levelProgress: 9
-    selLevel: 0
-  levelDescText:
-  - "\u041E\u0437\u043D\u0430\u043A\u043E\u043C\u044C\u0442\u0435\u0441\u044C \u0441
-    \u0431\u0430\u0437\u043E\u0432\u044B\u043C\u0438 \u043C\u0435\u0445\u0430\u043D\u0438\u043A\u0430\u043C\u0438
-    \u0438\u0433\u0440\u044B"
-  - "\u041D\u0430\u0447\u0430\u043B\u043E \u043F\u0443\u0442\u0438"
-  - "\u041A\u043D\u043E\u043F\u043A\u0438"
-  - "\u0411\u043E\u043B\u044C\u0448\u0435 \u0438\u0441\u043F\u044B\u0442\u0430\u043D\u0438\u0439!"
-  - "\u0412\u0440\u0435\u043C\u044F \u043F\u043E\u0434\u0436\u0438\u043C\u0430\u0435\u0442"
-  - "\u041D\u0435\u0431\u043E\u043B\u044C\u0448\u0438\u0435 \u043D\u0435\u043F\u043E\u043B\u0430\u0434\u043A\u0438"
-  - "\u0413\u043E\u0441\u043F\u043E\u0434\u0441\u0442\u0432\u043E \u0432\u0435\u0440\u0435\u0432\u043E\u043A"
-  - "\u0422\u043E\u0447\u043D\u043E\u0441\u0442\u044C"
-  - "\u0422\u0443\u0440\u0435\u043B\u044C\u043D\u043E\u0435 \u0432\u0435\u0441\u0435\u043B\u044C\u0435"
-  - BOSS FIGHT
-  englevelDescText:
-  - Check out the basic mechanics of the game
-  - The beginning of the path
-  - Buttons
-  - More challenges!
-  - Time is running out
-  - Minor difficulties
-  - Domination of the ropes
-  - Accuracy
-  - Turret fun
-  - BOSS FIGHT
-  preview: {fileID: 1137196553}
-  underText: {fileID: 1822952737}
-  labelT: {fileID: 411024154}
-  MainMenu: {fileID: 1032038008}
-  About: {fileID: 988172008}
-  LevelSelect: {fileID: 1333786959}
-  PartMenu: {fileID: 798827734}
-  field: {fileID: 1609126416}
-  levelsInPart: 9
-  playText: {fileID: 1360770758}
-  aboutText: {fileID: 2087142658}
-  exitText: {fileID: 1763524068}
-  currentScore: {fileID: 0}
-  bestScore: {fileID: 0}
-  currentResult: {fileID: 0}
-  bestResultLabel: {fileID: 240649780}
-  levelSelPlayButtonLabel: {fileID: 1921858331}
-  description: {fileID: 914091024}
-  bonusCode: {fileID: 389845094}
-  partCompleteText: {fileID: 134854460}
-  activePlay: {r: 0, g: 0, b: 0, a: 0}
-  unactivePlay: {r: 0, g: 0, b: 0, a: 0}
-  playButton: {fileID: 0}
-  playButtonBlank: {fileID: 0}
-  volumeSlider: {fileID: 1483498169}
-  prsprites:
-  - {fileID: 21300000, guid: 4e9516a05c718d449b5c4dea66589328, type: 3}
-  - {fileID: 21300000, guid: 547c276f0249538489b1043f7294a05a, type: 3}
-  - {fileID: 21300000, guid: 82da2bd86a10989498493b55b808559f, type: 3}
-  - {fileID: 21300000, guid: a8e43a655665e044d9af93dcca599624, type: 3}
-  - {fileID: 21300000, guid: 45e65381b7c25b443ba82979201585cf, type: 3}
-  - {fileID: 21300000, guid: 168ec41e89640954995745b7e14fcf72, type: 3}
-  - {fileID: 21300000, guid: 2d27cdf74817e7f43808c0d18e726768, type: 3}
-  - {fileID: 21300000, guid: 30bc3f01eed8c0b409b2b7968d791ba2, type: 3}
-  - {fileID: 21300000, guid: 73d52e87d1d066188be6f3f8ce81484c, type: 3}
-  - {fileID: 21300000, guid: 77e1f3164a6bb16438039b48e6086287, type: 3}
-  - {fileID: 21300000, guid: b8c9f292536764d44b22e8e673a8ce46, type: 3}
 --- !u!4 &1434602306
 Transform:
   m_ObjectHideFlags: 0
@@ -3825,6 +3737,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1434602307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434602304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8962fc6da83bd184e882e786aead58b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 0
+  menuObj: {fileID: 1032038008}
+  partObj: {fileID: 798827734}
+  levelObj: {fileID: 1333786959}
+  aboutObj: {fileID: 988172008}
+--- !u!114 &1434602308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434602304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0ceda223a798643a16f533ed1f1094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewSprites:
+  - {fileID: 21300000, guid: 4e9516a05c718d449b5c4dea66589328, type: 3}
+  - {fileID: 21300000, guid: 547c276f0249538489b1043f7294a05a, type: 3}
+  - {fileID: 21300000, guid: 82da2bd86a10989498493b55b808559f, type: 3}
+  - {fileID: 21300000, guid: a8e43a655665e044d9af93dcca599624, type: 3}
+  - {fileID: 21300000, guid: 45e65381b7c25b443ba82979201585cf, type: 3}
+  - {fileID: 21300000, guid: 168ec41e89640954995745b7e14fcf72, type: 3}
+  - {fileID: 21300000, guid: 2d27cdf74817e7f43808c0d18e726768, type: 3}
+  - {fileID: 21300000, guid: 30bc3f01eed8c0b409b2b7968d791ba2, type: 3}
+  - {fileID: 21300000, guid: 73d52e87d1d066188be6f3f8ce81484c, type: 3}
+  - {fileID: 21300000, guid: 77e1f3164a6bb16438039b48e6086287, type: 3}
+  - {fileID: 21300000, guid: b8c9f292536764d44b22e8e673a8ce46, type: 3}
+  russianDescriptions:
+  - "\u041E\u0437\u043D\u0430\u043A\u043E\u043C\u044C\u0442\u0435\u0441\u044C \u0441
+    \u0431\u0430\u0437\u043E\u0432\u044B\u043C\u0438 \u043C\u0435\u0445\u0430\u043D\u0438\u043A\u0430\u043C\u0438
+    \u0438\u0433\u0440\u044B"
+  - "\u041D\u0430\u0447\u0430\u043B\u043E \u043F\u0443\u0442\u0438"
+  - "\u041A\u043D\u043E\u043F\u043A\u0438"
+  - "\u0411\u043E\u043B\u044C\u0448\u0435 \u0438\u0441\u043F\u044B\u0442\u0430\u043D\u0438\u0439!"
+  - "\u0412\u0440\u0435\u043C\u044F \u043F\u043E\u0434\u0436\u0438\u043C\u0430\u0435\u0442"
+  - "\u041D\u0435\u0431\u043E\u043B\u044C\u0448\u0438\u0435 \u043D\u0435\u043F\u043E\u043B\u0430\u0434\u043A\u0438"
+  - "\u0413\u043E\u0441\u043F\u043E\u0434\u0441\u0442\u0432\u043E \u0432\u0435\u0440\u0435\u0432\u043E\u043A"
+  - "\u0422\u043E\u0447\u043D\u043E\u0441\u0442\u044C"
+  - "\u0422\u0443\u0440\u0435\u043B\u044C\u043D\u043E\u0435 \u0432\u0435\u0441\u0435\u043B\u044C\u0435"
+  - BOSS FIGHT
+  englishDescriptions:
+  - Check out the basic mechanics of the game
+  - The beginning of the path
+  - Buttons
+  - More challenges!
+  - Time is running out
+  - Minor difficulties
+  - Domination of the ropes
+  - Accuracy
+  - Turret fun
+  - BOSS FIGHT
+  preview: {fileID: 1137196553}
+  title: {fileID: 411024154}
+  description: {fileID: 1822952737}
 --- !u!1 &1483498167
 GameObject:
   m_ObjectHideFlags: 0
@@ -3915,7 +3895,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
         m_MethodName: OnSliderValueChanged
         m_Mode: 1
@@ -4010,8 +3990,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
         m_MethodName: OnAboutButtonClick
         m_Mode: 1
         m_Arguments:
@@ -4217,7 +4197,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
         m_MethodName: OnVkButtonDown
         m_Mode: 1
@@ -4988,7 +4968,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
         m_MethodName: OnRusLangButtonDown
         m_Mode: 1
@@ -5120,25 +5100,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: OnRightButtonClick
-        m_Mode: 1
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1434602305}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: OnLoRButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1815853009}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
