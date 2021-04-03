@@ -3,18 +3,24 @@ using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class storage
+public class storage : MonoBehaviour
 {
     
-    public int currentLevel = 9;
-    public List<float> records = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-    public List<float> current = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-    public bool eng = true;
-    public float volume = 1f;
+    public class Data
+    {
+        public  int currentLevel = 9;
+        public  List<float> records = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public  List<float> current = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public  bool eng = true;
+        public float volume = 1f;
+    }
 
-    
+    public static Data data;
+
     void Start()
     {
+        
+        LoadData();
         /*
         storage st = new storage();
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))
@@ -22,18 +28,22 @@ public class storage
             st = JsonUtility.FromJson<storage>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
         }*/
     }
-    public void SaveRecord()
+    public static void SaveRecord()
     {
-        storage st = new storage();
-        File.WriteAllText(Application.persistentDataPath + "/saveload.json", JsonUtility.ToJson(st));
+        File.WriteAllText(Application.persistentDataPath + "/saveload.json", JsonUtility.ToJson(data));
     }
     // Update is called once per frame
-    public storage LoadData(storage stor)
+    public  void LoadData()
     {
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))
         {
-            stor = JsonUtility.FromJson<storage>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
+            data = JsonUtility.FromJson<Data>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
         }
-        return stor;
+        else
+        {
+           File.WriteAllText(Application.persistentDataPath + "/saveload.json", JsonUtility.ToJson(this));
+           data = JsonUtility.FromJson<Data>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
+        }
+        
     }
 }

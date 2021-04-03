@@ -2004,9 +2004,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: OnPreviewClick
+      - m_Target: {fileID: 1434602307}
+        m_TargetAssemblyTypeName: manager2, Assembly-CSharp
+        m_MethodName: OnGamePlayButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2029,7 +2029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  m_Color: {r: 0.36573368, g: 0.6981132, b: 0.29307583, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3716,6 +3716,7 @@ GameObject:
   - component: {fileID: 1434602306}
   - component: {fileID: 1434602307}
   - component: {fileID: 1434602308}
+  - component: {fileID: 1434602305}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -3723,6 +3724,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1434602305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434602304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111baad4da2f03d4fa93a922d555fde8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1434602306
 Transform:
   m_ObjectHideFlags: 0
@@ -3807,6 +3820,8 @@ MonoBehaviour:
   description: {fileID: 1822952737}
   curentScore: {fileID: 1907943102}
   bestScore: {fileID: 240649778}
+  playButton: {fileID: 716240661}
+  playButtonBlank: {fileID: 1893009275}
 --- !u!1 &1483498167
 GameObject:
   m_ObjectHideFlags: 0

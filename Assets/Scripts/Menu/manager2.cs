@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using System.IO;
 
 public class manager2 : MonoBehaviour
 {
-    [HideInInspector] public int number;
-    storage st = new storage();
+    [HideInInspector] public int number = storage.data.currentLevel;
+    storage st;
     public event UnityAction<int> LoadScreen;
     public GameObject menuObj, partObj,levelObj,aboutObj;
     AudioSource src;
@@ -20,12 +21,23 @@ public class manager2 : MonoBehaviour
         src = gameObject.AddComponent<AudioSource>();
         sound = Resources.Load<AudioClip>("Sounds/ui");
         //LoadScreen += GetComponent<levelChange>().previewChange;
+        if (PlayerPrefs.HasKey("menu"))
+        {
+            OnPartButtonClick();
+            LoadScreen?.Invoke(number);
+        }
     }
     public void OnPlayButtonClick()
     {
         menuObj.SetActive(false);
         partObj.SetActive(true);
         PlayClickSound();
+    }
+    public void OnGamePlayButtonClick()
+    {
+        PlayClickSound();
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("level_" + number);
     }
     public void OnAboutButtonClick()
     {
@@ -62,6 +74,7 @@ public class manager2 : MonoBehaviour
         }
         PlayClickSound();
     }
+  
     public void OnReturnButtonClick()
     {
       if(levelObj.activeSelf == true)
@@ -83,6 +96,7 @@ public class manager2 : MonoBehaviour
     }
     void PlayClickSound()
     {
-        src.PlayOneShot(sound, st.volume);
+        
+        src.PlayOneShot(sound,storage.data.volume);
     }
 }

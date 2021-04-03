@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6577406487894573145}
   - component: {fileID: 6577406487894573144}
   - component: {fileID: 6577406487894573150}
+  - component: {fileID: 8556863782424834651}
   m_Layer: 0
   m_Name: sysObj
   m_TagString: Untagged
@@ -56,3 +57,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cad07bf6e24d63e469b55aca19544030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  pauseButton: {fileID: 0}
+  resumeText: {fileID: 0}
+  restartText: {fileID: 0}
+  exitText: {fileID: 0}
+  pauseTitle: {fileID: 0}
+--- !u!114 &8556863782424834651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6577406487894573147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111baad4da2f03d4fa93a922d555fde8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 9
+  records:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  current:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  eng: 1
+  volume: 1

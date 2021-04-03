@@ -14,30 +14,20 @@ public class systemSettings : MonoBehaviour
     public Text resumeText, restartText, exitText,pauseTitle;
     AudioSource src;
     AudioClip ui;
-
+    storage st;
 
     //public Ball src, loopsrc;
-    SaveRecords sr = new SaveRecords();
-    public class SaveRecords
-    {
-
-        public List<float> records = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        public List<float> current = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        public bool eng = true;
-        public float volume = 1f;
-    }
+  
 
     // Start is called before the first frame update
     void Start()
     {
+        
         src = gameObject.AddComponent<AudioSource>();
         ui = Resources.Load<AudioClip>("Sounds/ui");
        
-        if (File.Exists(Application.persistentDataPath + "/saveload.json"))
-        {
-            sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
-        }
-        AudioListener.volume = sr.volume;
+        
+        AudioListener.volume = storage.data.volume;
         gameVersion = GameObject.Find("(R)").GetComponent<Text>();
         gameVersion.text = ("v"+ Application.version + "_alpha");
         ScoreText = GameObject.Find("scoreText").GetComponent<Text>();
@@ -46,7 +36,7 @@ public class systemSettings : MonoBehaviour
         Application.targetFrameRate = 300;
        
 
-        if(sr.eng == false)
+        if(storage.data.eng == false)
         {
             resumeText.text = "Продолжить";
             restartText.text = "Начать \n заново";
@@ -82,7 +72,7 @@ public class systemSettings : MonoBehaviour
         
         Time.timeScale = 1f;
         PlayerPrefs.SetInt("menu", 1);
-        AudioListener.volume = sr.volume;
+        AudioListener.volume = storage.data.volume;
         src.PlayOneShot(ui);
         SceneManager.LoadScene("Menu");
         
@@ -102,7 +92,7 @@ public class systemSettings : MonoBehaviour
         Time.timeScale = 1f;
         pauseMenu.SetActive(false); 
         pauseButton.SetActive(true);
-        AudioListener.volume = sr.volume;
+        AudioListener.volume = storage.data.volume;
 
         src.PlayOneShot(ui);
     }
@@ -110,7 +100,7 @@ public class systemSettings : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         Time.timeScale = 1f;
-        AudioListener.volume = sr.volume;
+        AudioListener.volume = storage.data.volume;
         src.PlayOneShot(ui);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

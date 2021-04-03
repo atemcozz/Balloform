@@ -6,15 +6,17 @@ using UnityEngine.UI;
 
 public class levelChange : MonoBehaviour
 {
-    storage st = new storage();
-    manager2 manager = new manager2();
+    storage st;
     public Sprite[] previewSprites;
     public string[] russianDescriptions;
     public string[] englishDescriptions;
-    public GameObject preview, title, description, curentScore,bestScore;
+    public GameObject preview, title, description, curentScore,bestScore, playButton,playButtonBlank;
+    
+    
     private void Start()
     {
-      st = st.LoadData(st);
+        // st = st.LoadData(st);
+        Debug.Log(storage.data.current);
     }
     public void OnEnable()
     {
@@ -45,39 +47,43 @@ public class levelChange : MonoBehaviour
     public void previewChange(int number)
     {
         Debug.Log("prchange");
-        if(number <= st.currentLevel) preview.GetComponent<Image>().sprite = previewSprites[number + 1];
+        if(number <= storage.data.currentLevel) preview.GetComponent<Image>().sprite = previewSprites[number + 1];
         else preview.GetComponent<Image>().sprite = previewSprites[0];
     }
     public void titleChange(int number)
     {
         if (number > 0) {
 
-            if (st.eng == false) title.GetComponent<Text>().text = "Уровень " + number;
+            if (storage.data.eng == false) title.GetComponent<Text>().text = "Уровень " + number;
             else title.GetComponent<Text>().text = "Level " + number;
         }
         else
         {
-            if (st.eng == false) title.GetComponent<Text>().text = "Обучение";
+            if (storage.data.eng == false) title.GetComponent<Text>().text = "Обучение";
             else title.GetComponent<Text>().text = "Tutorial";
         }
     }
     public void descriptionChange(int number)
     {
-        if(number <= st.currentLevel)
+        if(number <= storage.data.currentLevel)
         {
-            description.GetComponent<Text>().text = st.eng == true ? englishDescriptions[number] : russianDescriptions[number];
+            description.GetComponent<Text>().text = storage.data.eng == true ? englishDescriptions[number] : russianDescriptions[number];
+            playButton.SetActive(true);
+            playButtonBlank.SetActive(true);
         }
         else
         {
-            description.GetComponent<Text>().text = st.eng == true ? "Level is in development" :"Уровень в разработке";
+            description.GetComponent<Text>().text = storage.data.eng == true ? "Level is in development" :"Уровень в разработке";
+            playButton.SetActive(false);
+            playButtonBlank.SetActive(false);
         }
     }
     public void scoreChange(int number)
     {
-        curentScore.GetComponent<Text>().text = st.eng == true ? "Last result:" : "Последний результат";
-        bestScore.GetComponent<Text>().text = st.eng == true ? "Best result:" : "Лучший результат";
-        curentScore.transform.GetChild(0).GetComponent<Text>().text = st.current[number].ToString();
-        bestScore.transform.GetChild(0).GetComponent<Text>().text = st.records[number].ToString();
+        curentScore.GetComponent<Text>().text = storage.data.eng == true ? "Last result:" : "Последний результат";
+        bestScore.GetComponent<Text>().text = storage.data.eng == true ? "Best result:" : "Лучший результат";
+        curentScore.transform.GetChild(0).GetComponent<Text>().text = storage.data.current[number].ToString();
+        bestScore.transform.GetChild(0).GetComponent<Text>().text = storage.data.records[number].ToString();
     }
     public void playButtonChange(int number)
     {

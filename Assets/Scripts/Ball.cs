@@ -21,7 +21,6 @@ public class Ball : MonoBehaviour
     public Transform Camera;
     private bool isInWater = false;
     public Save save = new Save();
-    public SaveRecords sr = new SaveRecords();
     public Sprite paper;
     public Sprite defstate;
     public Sprite stone;
@@ -54,13 +53,7 @@ public class Ball : MonoBehaviour
          public int ballState = 1;
          public Vector2 checkpos;
     }
-    public class SaveRecords
-    {
-
-        public List<float> records = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-        public List<float> current = new List<float>() {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-
-    }
+    
 
 
     // Start is called before the first frame update
@@ -73,10 +66,7 @@ public class Ball : MonoBehaviour
        score = PlayerPrefs.GetFloat("score");
          }
         rb = GetComponent<Rigidbody2D>();
-       if(File.Exists(Application.persistentDataPath + "/saveload.json"))
-       {
-           sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
-       }
+      
 
 
 
@@ -102,11 +92,7 @@ public class Ball : MonoBehaviour
     }
 
 
-    public void SaveRecord()
-    {
-
-        File.WriteAllText(Application.persistentDataPath + "/saveload.json", JsonUtility.ToJson(sr));
-    }
+   
 
 
 
@@ -203,12 +189,12 @@ public class Ball : MonoBehaviour
         {
 
 
-            if(score > sr.records[levelIndex])
+            if(score > storage.data.records[levelIndex])
             {
-                sr.records[levelIndex] = score;
+                storage.data.records[levelIndex] = score;
             }
-            sr.current[levelIndex] = score;
-            SaveRecord();
+            storage.data.current[levelIndex] = score;
+            storage.SaveRecord();
             Debug.Log(levelIndex + "level");
             src.PlayOneShot(portal);
             StartCoroutine(Fade(true));
