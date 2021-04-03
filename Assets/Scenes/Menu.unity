@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 240649781}
   - component: {fileID: 240649780}
   m_Layer: 5
-  m_Name: levelName (2)
+  m_Name: bestScoreBlank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3805,6 +3805,8 @@ MonoBehaviour:
   preview: {fileID: 1137196553}
   title: {fileID: 411024154}
   description: {fileID: 1822952737}
+  curentScore: {fileID: 1907943102}
+  bestScore: {fileID: 240649778}
 --- !u!1 &1483498167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5438,7 +5440,7 @@ GameObject:
   - component: {fileID: 1907943105}
   - component: {fileID: 1907943104}
   m_Layer: 5
-  m_Name: currentResult
+  m_Name: currentScoreBlank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -14,7 +14,7 @@ public class levelChange : MonoBehaviour
     public GameObject preview, title, description, curentScore,bestScore;
     private void Start()
     {
-       
+      st = st.LoadData(st);
     }
     public void OnEnable()
     {
@@ -77,6 +77,7 @@ public class levelChange : MonoBehaviour
         curentScore.GetComponent<Text>().text = st.eng == true ? "Last result:" : "Последний результат";
         bestScore.GetComponent<Text>().text = st.eng == true ? "Best result:" : "Лучший результат";
         curentScore.transform.GetChild(0).GetComponent<Text>().text = st.current[number].ToString();
+        bestScore.transform.GetChild(0).GetComponent<Text>().text = st.records[number].ToString();
     }
     public void playButtonChange(int number)
     {
