@@ -2,7 +2,7 @@ using System.Collections;
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class storage : MonoBehaviour
 {
     
@@ -15,6 +15,7 @@ public class storage : MonoBehaviour
         public float volume = 1f;
         public bool fpsShow = false;
         public int maxLevel = 9;
+        public int menuVariant;
     }
 
     public static Data data;
@@ -23,6 +24,8 @@ public class storage : MonoBehaviour
     {
         
         LoadData();
+        
+        
         /*
         storage st = new storage();
         if (File.Exists(Application.persistentDataPath + "/saveload.json"))

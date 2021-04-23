@@ -8,16 +8,40 @@ public class moveBackground : MonoBehaviour
     public float speed;
     public float startX;
     public float endX;
-  
+    public bool isLower;
+    public Sprite[] backround0, backround1, backround2, backround3;
+    public changeBackground parent;
    
    
     // Start is called before the first frame update
     void Start()
     {
-       // rect = GetComponent<RectTransform>();
-        
-     
-   
+        // rect = GetComponent<RectTransform>();
+
+        switch (parent.type)
+        {
+            case 0:
+                if (isLower == true) GetComponent<SpriteRenderer>().sprite = backround0[0];
+                else GetComponent<SpriteRenderer>().sprite = backround0[1];
+                break;
+
+            case 1:
+                if (isLower == true) GetComponent<SpriteRenderer>().sprite = backround1[0];
+                else GetComponent<SpriteRenderer>().sprite = backround1[1];
+                break;
+            case 2:
+                if (isLower == true) GetComponent<SpriteRenderer>().sprite = backround2[0];
+                else GetComponent<SpriteRenderer>().sprite = backround2[1];
+                break;
+            case 3:
+                if (isLower == true) GetComponent<SpriteRenderer>().sprite = backround3[0];
+                else GetComponent<SpriteRenderer>().sprite = backround3[1];
+                break;
+
+
+
+        }
+        Debug.Log(parent.type);
     }
 
     // Update is called once per frame
@@ -36,5 +60,6 @@ public class moveBackground : MonoBehaviour
 
       
     }
+ 
 }
 
