@@ -14,7 +14,7 @@ public class storage : MonoBehaviour
         public  bool eng = true;
         public float volume = 1f;
         public bool fpsShow = false;
-        public int maxLevel = 9;
+        public int maxLevel = 10;
         public int menuVariant;
     }
 

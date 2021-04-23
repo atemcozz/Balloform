@@ -18,6 +18,7 @@ public class manager2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         AudioListener.volume = storage.data.volume;
         number = storage.data.currentLevel;
         src = gameObject.AddComponent<AudioSource>();
@@ -58,7 +59,8 @@ public class manager2 : MonoBehaviour
     public void OnPartButtonClick()
     {
         PlayClickSound();
-        LoadScreen?.Invoke(number);
+        if(number != storage.data.maxLevel) LoadScreen?.Invoke(number);
+        else LoadScreen?.Invoke(--number);
         menuObj.SetActive(false);
         partObj.SetActive(false);
         levelObj.SetActive(true);
@@ -66,7 +68,7 @@ public class manager2 : MonoBehaviour
     }
     public void OnArrowClick(Button button)
     {
-        if (button.gameObject.name == "rightButton" && number != storage.data.maxLevel)
+        if (button.gameObject.name == "rightButton" && number < storage.data.maxLevel-1)
         {
             number++;
             LoadScreen?.Invoke(number);

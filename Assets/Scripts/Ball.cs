@@ -105,7 +105,7 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(AudioListener.volume);
+        
         checkGround();
         Camera.position = new Vector3(rb.transform.position.x, rb.transform.position.y, -10); //�������� ������
         groundCheck.transform.position = new Vector2(rb.transform.position.x, rb.transform.position.y-(GetComponent<CircleCollider2D>().bounds.size.y/2)); //����� ��� �������� ��������
@@ -209,7 +209,7 @@ public class Ball : MonoBehaviour
             }
             storage.data.current[levelIndex] = score;
 
-            if (levelIndex == storage.data.currentLevel && storage.data.currentLevel < storage.data.maxLevel) storage.data.currentLevel++;
+            if (levelIndex == storage.data.currentLevel) storage.data.currentLevel++;
             storage.SaveRecord();
             Debug.Log(levelIndex + "level");
             src.PlayOneShot(portal);
