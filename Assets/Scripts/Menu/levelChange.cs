@@ -16,7 +16,7 @@ public class levelChange : MonoBehaviour
     private void Start()
     {
         // st = st.LoadData(st);
-        Debug.Log(storage.data.current);
+       
     }
     public void OnEnable()
     {

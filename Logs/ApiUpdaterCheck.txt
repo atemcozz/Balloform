@@ -1,30 +1,20 @@
-[api-updater (non-obsolete-error-filter)] 19.03.2021 18:59:54 : Starting D:/Program Files/Unity/2020.2.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 22.04.2021 22:02:39 : Starting D:/Program Files/Unity/2020.3.4f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
 [api-updater (non-obsolete-error-filter)] 
 ----------------------------------
-jit/startup time      : 1704,1709ms
-moved types parse time: 293ms
-candidates parse time : 1ms
-C# parse time         : 1137ms
-candidates check time : 135ms
-console write time    : 0ms
+jit/startup time      : 2166,8515ms
+moved types parse time: 213ms
+candidates parse time : 54ms
+C# parse time         : 1596ms
+candidates check time : 116ms
+console write time    : 40ms
 
-[api-updater (non-obsolete-error-filter)] 21.03.2021 18:42:43 : Starting D:/Program Files/Unity/2020.2.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 23.04.2021 11:13:50 : Starting D:/Program Files/Unity/2020.3.4f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
 [api-updater (non-obsolete-error-filter)] 
 ----------------------------------
-jit/startup time      : 674,4785ms
-moved types parse time: 120ms
-candidates parse time : 2ms
-C# parse time         : 382ms
-candidates check time : 824ms
+jit/startup time      : 234,2362ms
+moved types parse time: 119ms
+candidates parse time : 26ms
+C# parse time         : 419ms
+candidates check time : 57ms
 console write time    : 0ms
-
-[api-updater (non-obsolete-error-filter)] 23.03.2021 12:00:20 : Starting D:/Program Files/Unity/2020.2.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
-[api-updater (non-obsolete-error-filter)] 
-----------------------------------
-jit/startup time      : 1508,1291ms
-moved types parse time: 328ms
-candidates parse time : 3ms
-C# parse time         : 1572ms
-candidates check time : 88ms
-console write time    : 14ms
 

@@ -8,7 +8,7 @@ using System.IO;
 
 public class manager2 : MonoBehaviour
 {
-    [HideInInspector] public int number = storage.data.currentLevel;
+    [HideInInspector] public int number;
     storage st;
     public event UnityAction<int> LoadScreen;
     public GameObject menuObj, partObj,levelObj,aboutObj;
@@ -18,6 +18,7 @@ public class manager2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        number = storage.data.currentLevel;
         src = gameObject.AddComponent<AudioSource>();
         sound = Resources.Load<AudioClip>("Sounds/ui");
         //LoadScreen += GetComponent<levelChange>().previewChange;
@@ -25,6 +26,7 @@ public class manager2 : MonoBehaviour
         {
             OnPartButtonClick();
             LoadScreen?.Invoke(number);
+            PlayerPrefs.DeleteAll();
         }
     }
     public void OnPlayButtonClick()
@@ -55,6 +57,7 @@ public class manager2 : MonoBehaviour
     {
         PlayClickSound();
         LoadScreen?.Invoke(number);
+        menuObj.SetActive(false);
         partObj.SetActive(false);
         levelObj.SetActive(true);
 
@@ -89,6 +92,7 @@ public class manager2 : MonoBehaviour
         }
         PlayClickSound();
     }
+   
     // Update is called once per frame
     void Update()
     {
