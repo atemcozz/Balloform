@@ -13,6 +13,7 @@ public class storage : MonoBehaviour
         public  List<float> current = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public  bool eng = true;
         public float volume = 1f;
+        public bool fpsShow = false;
     }
 
     public static Data data;

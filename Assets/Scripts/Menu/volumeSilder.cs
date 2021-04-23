@@ -21,6 +21,7 @@ public class volumeSilder : MonoBehaviour
     public void OnValueChanged()
     {
         storage.data.volume = slider.value;
+        AudioListener.volume = slider.value;
         storage.SaveRecord();
     }
 }
