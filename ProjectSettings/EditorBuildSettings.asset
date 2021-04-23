@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/level_debug.unity
     guid: c593e494ce6fc6d4689a545f6226ca20
   - enabled: 1
-    path: Assets/Scenes/bonus_1.unity
+    path: Assets/Scenes/level_pain.unity
     guid: 3844105b311d529668b780733e8fa6ce
   - enabled: 0
     path: 

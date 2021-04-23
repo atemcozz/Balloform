@@ -25,7 +25,8 @@ public class bonusCodeInputField : MonoBehaviour
         for(int i = 0; i < bonusLabels.Length; i++)
         {
             if (inputField.text == bonusLabels[i])
-                SceneManager.LoadScene("level_debug");
+                SceneManager.LoadScene("level_" + inputField.text);
         }
+        
     }
 }
