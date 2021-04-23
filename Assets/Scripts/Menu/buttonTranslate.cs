@@ -7,10 +7,11 @@ public class buttonTranslate : MonoBehaviour
 {
     public string russianText, englishText;
     Text text;
+   // storage st;
     // Start is called before the first frame update
     void Start()
     {
-        
+       // st = gameObject.AddComponent<storage>();
         text = GetComponent<Text>();
         if (storage.data.eng == false)
         {
@@ -20,6 +21,7 @@ public class buttonTranslate : MonoBehaviour
         {
             text.text = englishText;
         }
+        
     }
 
     // Update is called once per frame

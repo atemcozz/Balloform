@@ -13,27 +13,18 @@ public class tutorialScreen : MonoBehaviour
     public Image image;
     AudioSource src;
     AudioClip ui;
-    public class SaveRecords
-    {
-
-        public List<float> records = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        public List<float> current = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        public bool eng = true;
-    }
+   
     // Start is called before the first frame update
     void Start()
     {
         src = gameObject.AddComponent<AudioSource>();
         ui = Resources.Load<AudioClip>("Sounds/ui");
-        SaveRecords sr = new SaveRecords();
-        if (File.Exists(Application.persistentDataPath + "/saveload.json"))
-        {
-            sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
-        }
         russprites = Resources.LoadAll<Sprite>("tutorial/rus");
         engsprites = Resources.LoadAll<Sprite>("tutorial/eng");
-        if (sr.eng == false) image.sprite = russprites[selLevel];
+        if (storage.data.eng == false) image.sprite = russprites[selLevel];
         else image.sprite = engsprites[selLevel];
+
+        AudioListener.volume = storage.data.volume;
     }
     
     // Update is called once per frame
@@ -44,15 +35,10 @@ public class tutorialScreen : MonoBehaviour
     public void OnNextButtonDown()
     {
         src.PlayOneShot(ui);
-        SaveRecords sr = new SaveRecords();
-        if (File.Exists(Application.persistentDataPath + "/saveload.json"))
-        {
-            sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
-        }
         if (selLevel < 7)
         {
             selLevel++;
-            if (sr.eng == false) image.sprite = russprites[selLevel];
+            if (storage.data.eng == false) image.sprite = russprites[selLevel];
             else image.sprite = engsprites[selLevel];
         }
         else
@@ -64,15 +50,12 @@ public class tutorialScreen : MonoBehaviour
     public void OnLastButtonDown()
     {
         src.PlayOneShot(ui);
-        SaveRecords sr = new SaveRecords();
-        if (File.Exists(Application.persistentDataPath + "/saveload.json"))
-        {
-            sr = JsonUtility.FromJson<SaveRecords>(File.ReadAllText(Application.persistentDataPath + "/saveload.json"));
-        }
+        
+      
         if (selLevel > 0)
         {
             selLevel--;
-            if (sr.eng == false) image.sprite = russprites[selLevel];
+            if (storage.data.eng == false) image.sprite = russprites[selLevel];
             else image.sprite = engsprites[selLevel];
         }
         else

@@ -18,6 +18,7 @@ public class manager2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioListener.volume = storage.data.volume;
         number = storage.data.currentLevel;
         src = gameObject.AddComponent<AudioSource>();
         sound = Resources.Load<AudioClip>("Sounds/ui");
@@ -39,7 +40,8 @@ public class manager2 : MonoBehaviour
     {
         PlayClickSound();
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene("level_" + number);
+        if(number!=0)SceneManager.LoadScene("level_" + number);
+        else SceneManager.LoadScene("tutorial");
     }
     public void OnAboutButtonClick()
     {
@@ -64,13 +66,13 @@ public class manager2 : MonoBehaviour
     }
     public void OnArrowClick(Button button)
     {
-        if (button.gameObject.name == "rightButton")
+        if (button.gameObject.name == "rightButton" && number != storage.data.maxLevel)
         {
             number++;
             LoadScreen?.Invoke(number);
            
         }
-        else if(number > 0)
+        if(button.gameObject.name == "leftButton" && number > 0)
         {
             number--;
             LoadScreen?.Invoke(number);

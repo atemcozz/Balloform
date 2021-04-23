@@ -208,6 +208,8 @@ public class Ball : MonoBehaviour
                 storage.data.records[levelIndex] = score;
             }
             storage.data.current[levelIndex] = score;
+
+            if (levelIndex == storage.data.currentLevel && storage.data.currentLevel < storage.data.maxLevel) storage.data.currentLevel++;
             storage.SaveRecord();
             Debug.Log(levelIndex + "level");
             src.PlayOneShot(portal);

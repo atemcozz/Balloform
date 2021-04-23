@@ -73,7 +73,7 @@ public class levelChange : MonoBehaviour
         }
         else
         {
-            description.GetComponent<Text>().text = storage.data.eng == true ? "Level is in development" :"Уровень в разработке";
+            description.GetComponent<Text>().text = storage.data.eng == true ? "Complete previous level" :"Пройдите предыдущий уровень";
             playButton.SetActive(false);
             playButtonBlank.SetActive(false);
         }

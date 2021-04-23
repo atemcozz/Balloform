@@ -8,12 +8,13 @@ public class storage : MonoBehaviour
     
     public class Data
     {
-        public  int currentLevel = 9;
+        public  int currentLevel = 0;
         public  List<float> records = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public  List<float> current = new List<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public  bool eng = true;
         public float volume = 1f;
         public bool fpsShow = false;
+        public int maxLevel = 9;
     }
 
     public static Data data;
