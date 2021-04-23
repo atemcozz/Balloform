@@ -100,6 +100,6 @@ public class manager2 : MonoBehaviour
     void PlayClickSound()
     {
         
-        src.PlayOneShot(sound,storage.data.volume);
+        src.PlayOneShot(sound);
     }
 }

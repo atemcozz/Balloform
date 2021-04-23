@@ -66,7 +66,7 @@ public class Ball : MonoBehaviour
        score = PlayerPrefs.GetFloat("score");
          }
         rb = GetComponent<Rigidbody2D>();
-      
+        
 
 
 
@@ -105,7 +105,7 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(AudioListener.volume);
         checkGround();
         Camera.position = new Vector3(rb.transform.position.x, rb.transform.position.y, -10); //�������� ������
         groundCheck.transform.position = new Vector2(rb.transform.position.x, rb.transform.position.y-(GetComponent<CircleCollider2D>().bounds.size.y/2)); //����� ��� �������� ��������
@@ -119,7 +119,7 @@ public class Ball : MonoBehaviour
 
         //if ((Input.GetKeyDown(KeyCode.Space)) && (isGround == true || (isInWater == true && save.ballState == 1)))
         //if ( ( (Input.GetKeyDown(KeyCode.Space)) || (Input.GetMouseButtonDown(0))) && (isGround == true || (isInWater == true && save.ballState == 1)))
-        if ((Input.GetKeyDown(KeyCode.Space)) && (isGround == true || (isInWater == true && save.ballState == 1)))
+        if ((Input.GetKeyDown(KeyCode.Space)) && isGround == true)
         {
             
             

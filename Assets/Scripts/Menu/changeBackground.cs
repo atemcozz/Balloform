@@ -12,8 +12,5 @@ public class changeBackground : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
