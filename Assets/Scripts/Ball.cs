@@ -375,7 +375,7 @@ public class Ball : MonoBehaviour
 
     public void OnJumpButtonDown()
     {
-        if(isGround == true || (isInWater == true && save.ballState == 1))
+        if(isGround == true)
         {
             //rb.AddForce(new Vector2(0f, jumpForce));
            

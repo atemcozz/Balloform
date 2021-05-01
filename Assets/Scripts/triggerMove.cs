@@ -27,7 +27,7 @@ public class triggerMove : MonoBehaviour
         src.loop = true;
         bossMusic = Resources.Load<AudioClip>("Sounds/boss_sound");
         src.clip = bossMusic;
-        if (PlayerPrefs.GetInt("boss") != 0 && !src.isPlaying) StartCoroutine(playBossMusic());
+       // if (PlayerPrefs.GetInt("boss") != 0 && !src.isPlaying) StartCoroutine(playBossMusic());
     }
 
     // Update is called once per frame
@@ -42,11 +42,11 @@ public class triggerMove : MonoBehaviour
 
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag == "Player"){
+        if(other.gameObject.tag == "Player" ){
             isMoving = 1;
           if(PlayerPrefs.GetInt("boss") !=2)  PlayerPrefs.SetInt("boss", 1);
 
-           if(!src.isPlaying) StartCoroutine(playBossMusic());
+           //if(!src.isPlaying) StartCoroutine(playBossMusic());
         }
     }
    public IEnumerator playBossMusic()
