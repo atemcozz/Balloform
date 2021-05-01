@@ -9,7 +9,7 @@ public class systemSettings : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject pauseButton;
-    Text ScoreText, gameVersion;
+    Text ScoreText;
     Ball  ball;
     public Text resumeText, restartText, exitText,pauseTitle;
     AudioSource src;
@@ -28,8 +28,8 @@ public class systemSettings : MonoBehaviour
        
         
         AudioListener.volume = storage.data.volume;
-        gameVersion = GameObject.Find("(R)").GetComponent<Text>();
-        gameVersion.text = ("v"+ Application.version + "_alpha");
+      
+        
         ScoreText = GameObject.Find("scoreText").GetComponent<Text>();
          ball = GameObject.Find("ball_def").GetComponent<Ball>();
  
