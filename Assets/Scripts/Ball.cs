@@ -1,9 +1,12 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using UnityEngine.SocialPlatforms;
 
 public class Ball : MonoBehaviour
 {
@@ -26,7 +29,11 @@ public class Ball : MonoBehaviour
     public Sprite stone;
     public Image image;
     Text ScoreText;
-   
+
+    public string[] leaderboardsIDs = {"CgkI-eugvo4GEAIQAQ", "CgkI-eugvo4GEAIQAg", "CgkI-eugvo4GEAIQAw",
+        "CgkI-eugvo4GEAIQBA", "CgkI-eugvo4GEAIQBQ", "CgkI-eugvo4GEAIQBg", "CgkI-eugvo4GEAIQBw",
+        "CgkI-eugvo4GEAIQCA", "CgkI-eugvo4GEAIQCQ", "CgkI-eugvo4GEAIQCg"};
+
     //Audio
     public AudioSource src;
     public AudioSource loopsrc;
@@ -211,6 +218,7 @@ public class Ball : MonoBehaviour
 
             if (levelIndex == storage.data.currentLevel) storage.data.currentLevel++;
             storage.SaveRecord();
+            Social.ReportScore((long)score, leaderboardsIDs[levelIndex], (bool success) => { });
             Debug.Log(levelIndex + "level");
             src.PlayOneShot(portal);
             StartCoroutine(Fade(true));
@@ -504,7 +512,7 @@ public class Ball : MonoBehaviour
         if (isFinish)
         {
             yield return new WaitForSeconds(1f);
-            PlayerPrefs.SetInt("menu", 1);
+            PlayerPrefs.SetInt("menu", 1);          
             SceneManager.LoadScene("Menu");
         }
          

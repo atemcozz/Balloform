@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using System.IO;
+using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using UnityEngine.SocialPlatforms;
 
 public class manager2 : MonoBehaviour
 {
@@ -30,6 +33,29 @@ public class manager2 : MonoBehaviour
             LoadScreen?.Invoke(number);
             PlayerPrefs.DeleteAll();
         }
+
+      //  PlayGamesPlatform.DebugLogEnabled = true;
+      //  PlayGamesPlatform.Activate();
+
+      
+        // Social.localUser.Authenticate(success =>
+        // {
+        //     if (success)
+        //     {
+        //         Debug.Log("sauth");
+
+        //     }
+        //     else
+        //     {
+
+        //     }
+        // });
+        // if (!PlayGamesPlatform.Instance.HasPermission("email"))
+        // {
+        //     PlayGamesPlatform.Instance.RequestPermission("email", result => {
+        //         // handle results
+        //     });
+        // }
     }
     public void OnPlayButtonClick()
     {
@@ -54,6 +80,7 @@ public class manager2 : MonoBehaviour
     {
         
         PlayClickSound();
+      //  PlayGamesPlatform.Instance.SignOut();
         Application.Quit();
     }
     public void OnPartButtonClick()
